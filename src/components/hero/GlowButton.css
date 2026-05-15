@@ -1,0 +1,125 @@
+/* 🔹 CONTENEDOR */
+.glow-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* 🔹 AURA EXTERNA */
+.glow-aura {
+    position: absolute;
+    inset: -8px;
+    border-radius: 9999px;
+    background: linear-gradient(to right, #FDE259, #F88A4B);
+    filter: blur(20px);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.glow-wrapper:hover .glow-aura {
+    opacity: 0.8;
+    filter: blur(40px);
+}
+
+/* 🔹 BORDE SNAKE */
+.glow-border {
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px;
+    padding: 2px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background: conic-gradient(from 0deg, #FDE259, #F88A4B, #FDE259);
+    filter: blur(2px);
+
+}
+
+.glow-wrapper:hover .glow-border {
+    opacity: 1;
+}
+
+/* 🔹 BOTÓN */
+.glow-button {
+    position: relative;
+    z-index: 10;
+    border-radius: 9999px;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1a1a1a;
+
+    background: linear-gradient(to right, #FDE259, #F88A4B);
+
+    transition: all 0.3s ease-out;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    border: none;
+    outline: none;
+
+    overflow: hidden;
+}
+
+/* 🔹 HOVER */
+.glow-wrapper:hover .glow-button {
+    transform: scale(1.1);
+    box-shadow: 0 20px 60px rgba(253,226,89,0.6);
+}
+
+/* 🔹 CLICK */
+.glow-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 80px rgba(253,226,89,1);
+}
+
+/* 🔹 BRILLO */
+.glow-shine {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px;
+    background: linear-gradient(
+            120deg,
+            transparent,
+            rgba(255,255,255,0.4),
+            transparent
+    );
+    transform: translateX(-120%);
+    transition: transform 0.7s ease-out;
+}
+
+.glow-wrapper:hover .glow-shine {
+    transform: translateX(120%);
+}
+
+/* 🔹 ANIMACIÓN */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+
+    .glow-button {
+        padding: 0.8rem 1.5rem;   /* antes 1.5rem 2.5rem */
+        font-size: 0.9rem;        /* antes 1.125rem */
+    }
+
+    .glow-wrapper:hover .glow-button {
+        transform: scale(1.05);   /* menos exagerado en móvil */
+    }
+
+    .glow-button:active {
+        transform: scale(0.92);
+    }
+
+    .glow-aura {
+        inset: -4px;              /* reduce aura */
+        filter: blur(12px);
+    }
+
+    .glow-border {
+        padding: 1px;             /* borde más fino */
+    }
+}

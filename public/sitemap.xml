@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://vmagencia.es/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vmagencia.es/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vmagencia.es/en" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://vmagencia.es/bg" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://vmagencia.es/faq</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vmagencia.es/faq" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vmagencia.es/en/faq" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://vmagencia.es/bg/faq" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vmagencia.es/es/formulario</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://vmagencia.es/en/formulario</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://vmagencia.es/bg/formulario</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://vmagencia.es/services/pack1</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vmagencia.es/services/pack2</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vmagencia.es/services/pack3</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vmagencia.es/services/pack4</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vmagencia.es/aviso-legal</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://vmagencia.es/politica-privacidad</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://vmagencia.es/politica-cookies</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

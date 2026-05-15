@@ -1,0 +1,191 @@
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-top-gradient {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2), transparent);
+    pointer-events: none;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    background: rgba(0, 0, 0, 0.15);
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .hero-overlay {
+        background: rgba(0, 0, 0, 0.15);
+    }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 30;
+    width: 100%;
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero-title {
+    font-size: 2.20rem;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    max-width: 850px;
+    margin: 0 auto;
+}
+.hero-title .line {
+    display: block;
+}
+/* DEFAULT (español) */
+.hero-title {
+    max-width: 850px;
+}
+
+/* BÚLGARO → MÁS ANCHO */
+.hero-title-bg {
+    max-width: 900px;   /* más ancho */
+
+}
+
+.hero-title-system {
+    display: inline;
+    background: linear-gradient(to right, #52d3d8,  #682cdf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-title-impulsa {
+    display: inline;
+    background: linear-gradient(to right, #ffde59, #ff914d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 42rem;
+    margin: 0 auto;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero-button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 640px) {
+    .hero-content {
+        padding: 0 1.5rem;
+    }
+
+    .hero-title {
+        font-size: 2.7rem;
+    }
+}
+
+/* ===== MEDIUM ===== */
+@media (min-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 1024px) {
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .hero-content {
+        gap: 2.25rem;
+    }
+}
+
+/* ===== LARGE DESKTOP ===== */
+@media (min-width: 1280px) {
+    .hero-title {
+        font-size: 4rem;
+    }
+}
+
+/* ===== MOBILE (≤768px) ===== */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 100svh;
+    }
+    .hero-content {
+        padding: 5rem 1.5rem 5rem;
+        gap: 1.5rem;
+    }
+    .hero-title {
+        font-size: 2rem;
+        max-width: 100%;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+}
+
+/* ===== MOBILE SMALL (≤480px) ===== */
+@media (max-width: 480px) {
+    .hero-section {
+        min-height: 100svh;
+    }
+    .hero-content {
+        gap: 1.25rem;
+        padding: 4.5rem 1.25rem 4rem;
+    }
+    .hero-title {
+        font-size: 1.65rem;
+        line-height: 1.1;
+        max-width: 100%;
+    }
+    .hero-subtitle {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        max-width: 100%;
+    }
+}
+
+/* ===== MOBILE TINY (≤380px) ===== */
+@media (max-width: 380px) {
+    .hero-content {
+        padding: 4rem 1rem 3rem;
+        gap: 1rem;
+    }
+    .hero-title {
+        font-size: 1.35rem;
+    }
+    .hero-subtitle {
+        font-size: 0.8rem;
+    }
+}

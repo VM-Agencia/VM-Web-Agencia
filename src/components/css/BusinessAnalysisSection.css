@@ -1,0 +1,429 @@
+.business-section {
+    position: relative;
+    overflow: hidden;
+    padding: 5rem 0;
+    background: rgba(0, 0, 0, 0.07); /* gris muy suave background: transparent;*/
+}
+
+.business-bg {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.business-glow {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(120px);
+}
+
+
+.business-container {
+    position: relative;
+    z-index: 10;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.business-header {
+    max-width: 768px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+
+.business-title {
+    font-size: 1.875rem;
+    line-height: 1.08;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #111111;
+}
+
+.business-title-gradient {
+    background: linear-gradient(90deg, #ff914d, #ffde59, #52d3d8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.business-subtitle {
+    margin-top: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #374151;
+}
+
+.business-grid {
+    display: grid;
+    gap: 2.5rem;
+}
+
+.business-card-wrap {
+    position: relative;
+}
+
+.business-card-glow {
+    position: absolute;
+    inset: -1px;
+    border-radius: 30px;
+    filter: blur(40px);
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.4s ease;
+}
+
+.business-card-glow-human,
+.business-card-glow-ai {
+    opacity: 0;
+}
+.business-card-glow-ai {
+    background: linear-gradient(
+            135deg,
+            rgba(82, 211, 216, 0.8),
+            rgba(8, 186, 204, 0.55),
+            rgba(104, 44, 223, 0.34)
+    );
+}
+.business-card-glow-human {
+    background: linear-gradient(
+            135deg,
+            rgba(255, 145, 77, 0.8),
+            rgba(255, 222, 89, 0.55),
+            transparent
+    );
+}
+
+.business-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    padding: 1.25rem;
+    backdrop-filter: blur(24px);
+}
+
+.business-card-human {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+}
+
+.business-card-ai {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+}
+.business-card-wrap:hover .business-card {
+    box-shadow: none; /* ❌ quita sombra */
+}
+
+.business-card-wrap:hover .business-card-glow {
+    opacity: 1; /* ✅ aparece glow */
+}
+
+
+.business-card-wrap:hover .business-card-glow-human {
+    animation: glowPulseHuman 2s infinite alternate;
+}
+
+.business-card-wrap:hover .business-card-glow-ai {
+    animation: glowPulseAI 2s infinite alternate;
+}
+
+@keyframes glowPulseHuman {
+    from { opacity: 0.6; }
+    to { opacity: 1; }
+}
+
+@keyframes glowPulseAI {
+    from { opacity: 0.6; }
+    to { opacity: 1; }
+}
+
+
+.business-card-wrap:hover .business-card-glow {
+    opacity: 1;
+    transform: scale(1.05);
+}
+.business-card-overlay {
+    position: absolute;
+    inset: 0;
+    border-radius: 30px;
+}
+
+.business-card-overlay-human {
+    background: linear-gradient(
+            135deg,
+            rgba(255, 145, 77, 0.42),
+            rgba(255, 222, 89, 0.28),
+            rgba(255, 255, 255, 0.76),
+            transparent 78%
+    );
+}
+
+.business-card-overlay-ai {
+    background: linear-gradient(
+            135deg,
+            rgba(82, 211, 216, 0.36),
+            rgba(8, 186, 204, 0.28),
+            rgba(104, 44, 223, 0.22),
+            rgba(255, 255, 255, 0.76),
+            transparent 82%
+    );
+}
+
+.business-card-topline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+}
+
+.business-card-topline-human {
+    background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 145, 77, 0.7),
+            transparent
+    );
+}
+
+.business-card-topline-ai {
+    background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(8, 186, 204, 0.7),
+            transparent
+    );
+}
+
+.business-card-content {
+    position: relative;
+    z-index: 10;
+}
+
+.business-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-bottom: 1.25rem;
+    padding: 0.65rem 0.95rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.business-chip-human {
+    border: 1px solid rgba(255, 145, 77, 0.4);
+    background: #fff0e6;
+    color: #e8702e;
+}
+
+.business-chip-ai {
+    border: 1px solid rgba(82, 211, 216, 0.4);
+    background: #e9fcff;
+    color: #079bb0;
+}
+
+.business-card-title {
+    font-size: 1.5rem;
+    line-height: 1.15;
+    font-weight: 600;
+    color: #111111;
+}
+
+.business-card-text {
+    margin-top: 0.9rem;
+    max-width: 42rem;
+    color: #4b5563;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.business-info-list {
+    margin-top: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.info-row-group {
+    position: relative;
+}
+
+.info-row-glow {
+    position: absolute;
+    inset: 0;
+    border-radius: 1rem;
+    opacity: 0;
+    filter: blur(20px);
+    transition: opacity 0.5s ease;
+}
+
+.info-row-group:hover .info-row-glow {
+    opacity: 1;
+}
+
+.info-glow-human-1 {
+    background: linear-gradient(
+            90deg,
+            rgba(255, 145, 77, 0.45),
+            rgba(255, 222, 89, 0.28)
+    );
+}
+
+.info-glow-human-2 {
+    background: linear-gradient(
+            90deg,
+            rgba(255, 222, 89, 0.4),
+            rgba(255, 145, 77, 0.22)
+    );
+}
+
+.info-glow-human-3 {
+    background: linear-gradient(
+            90deg,
+            rgba(255, 145, 77, 0.38),
+            rgba(255, 222, 89, 0.22)
+    );
+}
+
+.info-glow-ai-1 {
+    background: linear-gradient(
+            90deg,
+            rgba(82, 211, 216, 0.45),
+            rgba(8, 186, 204, 0.3)
+    );
+}
+
+.info-glow-ai-2 {
+    background: linear-gradient(
+            90deg,
+            rgba(8, 186, 204, 0.4),
+            rgba(104, 44, 223, 0.22)
+    );
+}
+
+.info-glow-ai-3 {
+    background: linear-gradient(
+            90deg,
+            rgba(104, 44, 223, 0.36),
+            rgba(82, 211, 216, 0.22)
+    );
+}
+
+.info-row {
+    position: relative;
+    display: flex;
+    gap: 0.85rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.85);
+    padding: 0.9rem;
+    backdrop-filter: blur(16px);
+    transition:
+            background 0.3s ease,
+            border-color 0.3s ease,
+            box-shadow 0.3s ease;
+}
+
+.info-row-group:hover .info-row {
+    background: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 12px 35px rgba(255, 255, 255, 0.55);
+}
+
+.info-row-icon {
+    width: 2.45rem;
+    height: 2.45rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.info-row-title {
+    color: #111111;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.info-row-text {
+    margin-top: 0.2rem;
+    color: #4b5563;
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+
+.icon-orange {
+    color: #ff914d;
+}
+
+.icon-yellow {
+    color: #ffde59;
+}
+
+.icon-cyan {
+    color: #52d3d8;
+}
+
+.icon-blue {
+    color: #08bacc;
+}
+
+.icon-purple {
+    color: #682cdf;
+}
+
+@media (min-width: 768px) {
+    .business-section {
+        padding: 6rem 0;
+    }
+
+    .business-title {
+        font-size: 2rem;
+    }
+
+    .business-subtitle {
+        font-size: 1.05rem;
+    }
+
+    .business-card {
+        padding: 1.5rem;
+    }
+
+    .business-card-title {
+        font-size: 1.5rem;
+    }
+
+    .business-card-text {
+        font-size: 0.98rem;
+    }
+
+    .info-row-title {
+        font-size: 0.98rem;
+    }
+
+    .info-row-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .business-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .business-title {
+        font-size:2.25rem;
+    }
+
+    .business-card-title {
+        font-size: 1.125rem;
+    }
+}

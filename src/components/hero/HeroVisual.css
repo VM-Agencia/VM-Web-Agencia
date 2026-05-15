@@ -1,0 +1,66 @@
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0.1;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0.1;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hero-hand {
+    position: absolute;
+    will-change: transform, opacity;
+}
+
+.human-hand {
+    left: -35vw;
+    top: 50%;
+    width: 80vw;
+    animation: slideInLeft 0.7s ease-out forwards;
+}
+
+.robot-hand {
+    right: -35vw;
+    top: 25%;
+    width: 80vw;
+    animation: slideInRight 0.7s 0.2s ease-out forwards;
+    opacity: 0;
+}
+
+@media (min-width: 768px) {
+    .human-hand {
+        left: -15vw;
+        top: auto;
+        bottom: -5%;
+        width: 55vw;
+    }
+
+    .robot-hand {
+        right: -15vw;
+        top: 5%;
+        width: 55vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    .human-hand {
+        left: -10vw;
+    }
+
+    .robot-hand {
+        right: -10vw;
+    }
+}

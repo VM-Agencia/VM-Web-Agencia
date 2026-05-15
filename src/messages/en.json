@@ -1,0 +1,375 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "servicios": "Services",
+    "proyectos": "Projects",
+    "contactar": "Contact",
+    "faq": "FAQ"
+  },
+  "Hero": {
+    "line1": "Transform your",
+    "highlight1": "invisible",
+    "line2": "business into a",
+    "highlight2": "digital",
+    "line3": "one that generates clients",
+    "subtitle": "We design Websites | Apps | AI & Automations | save time and generate clients",
+    "cta": "Book a call"
+  },
+  "Services": {
+    "title": "Services",
+    "pack": "Pack",
+    "pack1": { "title": "Digital presence", "desc": "A foundational entry point for your business to exist and be understood online.", "items": ["Website", "Strategic copywriting", "Basic SEO"] },
+    "pack2": { "title": "Client acquisition", "desc": "Attract customers consistently with strategy and active lead capture.", "items": ["Marketing strategy", "Sales funnels", "Online advertising & email", "Lead capture forms"] },
+    "pack3": { "title": "Automation & AI", "desc": "Your system works for you while you scale.", "items": ["Automation of repetitive processes", "Automated responses (web, WhatsApp, email)", "Intelligent chatbots", "Automated client follow-up", "AI to classify and support business decisions"] },
+    "pack4": { "title": "Complete VM System", "desc": "Your entire business turned into a digital system. All included: website, lead capture, automation, AI and more.", "items": ["Website + SEO + Copywriting", "Lead Capture + Funnels + Email", "Automation + AI + Chatbots", "Custom App + Dashboard + Support"] }
+  },
+  "Business": {
+    "eyebrow": "Without a digital presence, you don't exist",
+    "title": "Is your business a burden or a system?",
+    "subtitle": "We help local businesses with little or no digital presence transform and scale. We increase your visibility, attract more clients, and save you time.",
+    "chaos": {
+      "badge": "Traditional business: chaos, overload and lost clients",
+      "title": "You're busy all day, but your business still feels out of control.",
+      "description": "There's activity, messages, work... but also delays, disorganization and missed opportunities slipping through unnoticed.",
+      "items": [
+        { "title": "Messages keep piling up", "text": "You reply too late and every minute cools down a potential sale. WhatsApp, Instagram and email everywhere." },
+        { "title": "Disorganization is costing you money", "text": "Nothing moves forward unless you validate every small step. It creates bottlenecks and you can't do everything." },
+        { "title": "Lost opportunities", "text": "Leads come in, but there's no filtering, follow-up or real control over opportunities." },
+        { "title": "Business without a website", "text": "If you're not online, you don't exist to the customer. You depend only on word of mouth." }
+      ]
+    },
+    "solution": {
+      "badge": "VM System Business: order, control and real growth",
+      "title": "Your business now has a system. More clients, order, trust and automated tasks.",
+      "description": "Less improvisation, fewer repetitive tasks and more control over every client, every process and every sales opportunity.",
+      "items": [
+        { "title": "AI responds and filters for you", "text": "Faster response, automatic classification and fewer client leaks." },
+        { "title": "Your processes stop being manual", "text": "Less operational chaos and more time to sell, lead and grow." },
+        { "title": "Every client enters a system", "text": "Lead capture, follow-up and control in a clear and measurable flow." },
+        { "title": "Your website starts converting", "text": "A digital presence that builds trust, strategy and results." }
+      ]
+    }
+  },
+  "System": {
+    "title": "This is how we build",
+    "highlight": "your system step by step",
+    "subtitle": "It is not a random website or senseless automations. We build a system where every part works to grow your business.",
+    "steps": [
+      { "title": "We diagnose and analyze your business", "description": "Before touching design or technology, we analyze your business and detect if we can work together", "bullets": ["How are you attracting clients now?", "How much money are you losing by not having a digital presence?", "Where does your client drop off?", "Can we work with you?"] },
+      { "title": "We design the VM System", "description": "We define a clear structure: funnel, automations and experience so everything works together, not separately.", "bullets": ["Sales funnel", "Lead capture strategy", "Key automations", "Guide the client"] },
+      { "title": "We build a website that converts", "description": "We develop a website designed to guide, convince and convert, connected from the start with the entire system.", "bullets": ["Results-oriented structure", "Guide the client to make decisions", "Unique and responsive design", "Ready to scale"] },
+      { "title": "We automate and optimize", "description": "We integrate AI and automations to reduce manual work and improve results without constantly depending on you.", "bullets": ["Automated responses", "Lead follow-up", "CRM and tools integration", "Progressive optimization"] }
+    ],
+    "result": {
+      "title": "What is holding your business back? ",
+      "highlight": "Find out with this Self-Diagnosis.",
+      "description": "Receive in your email a PDF guide so you can analyze your business on your own, detect problems and understand how to improve your results.",
+      "placeholder": "Your email",
+      "cta": "Get guide",
+      "features": ["Self-Diagnosis", "100% Free", "No commitment"]
+    }
+  },
+  "Projects": {
+    "title": "Projects that",
+    "highlight": "convert",
+    "subtitle": "Select a project to see how it looks on real devices.",
+    "cta": "View project",
+    "projects": [
+      { "category": "Corporate Website", "description": "Professional website for a detailing studio with premium focus, appointment booking and clear service presentation." },
+      { "title": "Lead Automation", "category": "AI & Automation", "description": "Automated lead capture and qualification system with AI and CRM integration." },
+      { "title": "Internal Dashboard", "category": "Custom App", "description": "Real-time analytics and operations control dashboard for a logistics company." }
+    ]
+  },
+  "CTA": {
+    "title": "If you want to grow your local business,",
+    "highlight": "you need VM Agency",
+    "description": "We show you what's failing in your business and how to fix it."
+  },
+  "Footer": {
+    "brand": "We transform traditional businesses with technology, design and automation. We create digital systems designed to attract, convert and scale.",
+    "titles": { "links": "Links", "legal": "Legal", "contact": "Contact" },
+    "links": { "home": "Home", "servicios": "Services", "proyectos": "Projects", "contactar": "Contact", "faq": "FAQ" },
+    "location": "Gandia, Spain",
+    "cta": { "title": "Let's talk about your project", "subtitle": "Tell us your idea and we'll help you make it grow." },
+    "copy": "All rights reserved."
+  },
+  "Pack1": {
+    "title": "Service",
+    "highlight": "Web + Basic SEO",
+    "description": "Your professional website optimized so people can find you on Google.",
+    "includes": "What",
+    "includesHighlight": "is included",
+    "maintenanceBanner": { "title": "Monthly maintenance", "desc": "Hosting, SEO, bug fixes and content updates every month.", "cta": "Add maintenance" },
+    "features": [
+      { "title": "Professional website", "text": "Modern design that adapts to your business." },
+      { "title": "Basic SEO", "text": "Your website optimized so Google can find you." },
+      { "title": "Fast loading", "text": "Your site loads fast. No waiting, no leaving." },
+      { "title": "100% Responsive", "text": "Looks great on mobile, tablet and desktop." },
+      { "title": "Strategic copywriting", "text": "Clear texts that explain what you do." },
+      { "title": "Secure and reliable", "text": "A safe website with a professional image." }
+    ],
+    "price": {
+      "title": "Web + Basic SEO",
+      "points": ["Ideal for businesses just starting out", "Improves your Google visibility", "Attract more clients organically"],
+      "from": "From", "value": "499€", "type": "one-time payment", "cta": "Get this package", "note": "No monthly fees · No commitment",
+      "maintenance": "Optional monthly maintenance: hosting, SEO, bug fixes and content updates"
+    },
+    "bottom": { "title": "Have questions or want to get started?", "desc": "Let's talk and we'll help you choose the best solution for your business.", "cta": "Book a meeting" },
+    "mockup": {
+      "business": "Your Business",
+      "nav": { "home": "Home", "services": "Services", "contact": "Contact" },
+      "titleHighlight": "Solutions",
+      "title": "that drive your business forward",
+      "subtitle": "We help businesses like yours grow with tailored digital solutions.",
+      "cta": "Request information",
+      "mobileText": "Your website ready to turn visits into clients.",
+      "contact": "Contact"
+    }
+  },
+  "Pack2": {
+    "title": "Customer",
+    "highlight": "acquisition",
+    "description": "Attract clients with Google ads, automatic funnels, and a strategy tailored to your business.",
+    "imageAlt": "Client acquisition with online ads",
+    "includes": "What",
+    "includesHighlight": "is included",
+    "vsGoogleOrMeta": "We choose based on your",
+    "vsGoogleOrMetaHighlight": "business needs",
+    "vsGoogleOrMetaEnd": "",
+    "vsGoogle": {
+      "title": "Google Ads",
+      "items": [
+        "Pay per click: you only pay when they click",
+        "Audience with purchase intent",
+        "Faster and more direct results",
+        "Higher cost, but the customer buys now"
+      ],
+      "metric": "Average cost",
+      "value": "0.55€ / click"
+    },
+    "vsMeta": {
+      "title": "Meta Ads (Facebook / Instagram)",
+      "items": [
+        "Pay per reach (CPM): you pay for impressions",
+        "Audience in entertainment mode",
+        "Sparks the desire to buy",
+        "Lower cost, ideal to generate demand"
+      ],
+      "metric": "Average cost",
+      "value": "Variable per impression"
+    },
+    "vsRoi": {
+      "title": "Real profitability example",
+      "items": [
+        { "label": "Average ticket", "value": "150€" },
+        { "label": "Clicks for 1 sale", "value": "95" },
+        { "label": "Cost per click", "value": "0.55€" }
+      ],
+      "investmentLabel": "Total investment",
+      "investmentValue": "52.25€",
+      "result": "For every 1€ invested you get back 2.87€",
+      "badge": "ROI 287%"
+    },
+    "whatsapp": {
+      "title": "WhatsApp Business auto setup",
+      "desc": "We set up your WhatsApp Business with the automatic options the app offers by default. No coding or complex integrations.",
+      "features": [
+        { "title": "Greeting message", "desc": "Sent automatically when someone writes to you for the first time, welcoming them and building trust." },
+        { "title": "Away message", "desc": "Activates outside your business hours so customers know when you'll get back to them." },
+        { "title": "Quick replies", "desc": "Shortcuts with predefined phrases to answer frequently asked questions with one tap." }
+      ]
+    },
+    "gbp": {
+      "title": "Google Business Profile",
+      "desc": "We create or optimize your Google Business profile so you appear in local searches and Google Maps. Your customers can find you more easily and see your hours, reviews and contact info all in one place.",
+      "preview": {
+        "name": "Your Business",
+        "category": "Professional services",
+        "address": "123 Main Street",
+        "hours": "Mon-Fri 9:00-18:00",
+        "call": "Call",
+        "website": "Website"
+      }
+    },
+    "landing": {
+      "title": "Landing page for campaigns",
+      "desc": "We design a simple, focused page where customers land after clicking your ads. No menus or distractions, just what they need to understand your offer and leave their details.",
+      "preview": {
+        "title": "Transform your business with a digital presence",
+        "subtitle": "Leave your details and we'll call you with no obligation to explain how we can help you grow.",
+        "nameField": "Name",
+        "emailField": "Email",
+        "cta": "Request information"
+      }
+    },
+    "maintenanceBanner": { "title": "Monthly maintenance", "desc": "Hosting, SEO, bug fixes and content updates every month.", "cta": "Add maintenance" },
+    "features": [
+      { "title": "Marketing strategy", "text": "We analyze your business and decide whether to advertise on Google or Meta (Facebook/Instagram) based on your customer profile. On Google, people are actively searching for what you offer — you pay per click (e.g. 0.55€ per click) and only pay when someone clicks. On Meta, you pay for reach (impressions); people are browsing for entertainment and your ad can spark the desire to buy. Google is more expensive but the customer already has purchase intent. Meta is cheaper but the customer needs to be convinced.\n\n Real example: if your average ticket is 150€, we needed 95 clicks on Google to get 1 sale. Each click costs 0.55€, total investment 95 × 0.55€ = 52.25€. The sale was 150€. For every 1€ invested you get back 2.87€. That's a 287% ROI." },
+      { "title": "Customer targeting", "text": "We define who your ideal customer is: age, location, interests and behavior. This way your ads only show to people who can actually buy from you, without wasting money on people who will never hire you." },
+      { "title": "Market analysis", "text": "We study your area, your competition and how your current customers behave. This tells us whether to advertise on Google, Meta or both, and with what type of campaign." },
+      { "title": "Online advertising", "text": "We create and manage ads on Google and social media. We test different texts, images and audiences to keep what works best and avoid wasting budget." },
+      { "title": "WhatsApp Business auto setup", "text": "We set up WhatsApp Business with automatic replies: greetings, away messages and quick replies. We use the basic default options the app offers, no complications." },
+      { "title": "Lead capture forms", "text": "We add forms on your website and social media so interested customers can leave their details effortlessly. You receive organized information ready to use." }
+    ],
+    "price": {
+      "title": "Customer acquisition",
+      "points": ["Turn visitors into customers", "Attract leads consistently", "Increase real opportunities"],
+      "from": "From", "value": "899€", "type": "one-time payment", "cta": "Get this package", "note": "No monthly fees · No commitment"
+    },
+    "bottom": { "title": "Want more clients without complexity?", "desc": "We help you build a lead capture system that attracts clients for you.", "cta": "Book a meeting" }
+  },
+  "Pack3": {
+    "title": "Automation",
+    "highlight": "and AI",
+    "description": "We automate processes and apply AI so your business runs even when you're not there.",
+    "imageAlt": "Business automation and AI optimization system",
+
+    "chatName": "VM AI Assistant",
+    "chatOnline": "Online",
+    "chatPlaceholder": "Type a message...",
+    "chatTitle": "AI Chatbot",
+    "chatHighlight": "that talks for you",
+    "chatDesc": "24/7 customer support with smart, natural responses — like talking to a real person.",
+
+    "chatStats": [
+      "Available 24/7",
+      "Replies in seconds",
+      "No waiting"
+    ],
+
+    "scenarios": [
+      {
+        "label": "Sales",
+        "messages": [
+          { "client": "Hi, what services do you offer?", "bot": "We're VM Agency, digital marketing specialists. We offer web design, lead generation, and AI automation. What do you need?" },
+          { "client": "I need a website for my business", "bot": "Perfect! Our Pack 1 includes a professional website from 799€ with modern design, SEO and forms. Would you like to see an example?" },
+          { "client": "Yes, I'm interested", "bot": "Great! I've sent you examples by email. Would you like to schedule a call?" }
+        ]
+      },
+      {
+        "label": "Support",
+        "messages": [
+          { "client": "Hi, I'm having an issue with my website", "bot": "Hi! Tell me what's happening and we'll check it right away." },
+          { "client": "The contact page won't load", "bot": "Got it. We've identified the error, it'll be fixed in 10 minutes. Anything else?" },
+          { "client": "No thanks, that was fast!", "bot": "That's what we're here for 😊 I'm here 24/7 if you need help." }
+        ]
+      },
+      {
+        "label": "Bookings",
+        "messages": [
+          { "client": "Hi, I'd like to book an appointment", "bot": "Sure! Tell me which day and time works best and I'll schedule it automatically." },
+          { "client": "Thursday at 11:00", "bot": "Perfect! I've booked your appointment for Thursday at 11:00. I sent the confirmation via WhatsApp and email." },
+          { "client": "Thanks!", "bot": "You're welcome! See you on Thursday 😊" }
+        ]
+      }
+    ],
+
+    "process": {
+      "title": "How it works",
+      "desc": "Every message or data follows its own AI-powered automation route.",
+      "lanes": [
+        { "input": "WhatsApp", "ai": "AI Bot", "output": "Auto-reply" },
+        { "input": "Web", "ai": "AI Classifies", "output": "CRM" },
+        { "input": "Email", "ai": "AI Analyzes", "output": "Tasks" }
+      ],
+      "statusRunning": "▶ Automation active — real-time data flow",
+      "statusPaused": "⏸ Paused — press the button to start"
+    },
+
+    "demo": {
+      "title": "Try it yourself",
+      "desc": "Type anything and see how your AI assistant responds in real time.",
+      "greeting": "Hi! I'm the VM Agency virtual assistant. Ask me about pricing, features, or how automation works.",
+      "inputPlaceholder": "Type a message...",
+      "quickReplies": [
+        "How much does it cost?",
+        "How does it work?",
+        "Does it include WhatsApp?",
+        "What's included?"
+      ],
+      "responses": {
+        "greeting": "Hello! I'm here to answer your questions about automation and AI. What would you like to know?",
+        "price": "Pack 3 - Automation and AI is priced at 1299€ (one-time payment, no monthly fees). It includes an AI chatbot, WhatsApp Web and Email automation, CRM integration, and a control panel. Are you interested in a specific channel?",
+        "whatsapp": "Yes! The system integrates fully with WhatsApp Business. You can automate replies, send reminders, confirm appointments, and more, all from a unified platform.",
+        "how": "The process is simple: 1) We analyze your business, 2) We set up channels (WhatsApp, web, email), 3) We train the AI with your information, 4) We test and adjust, 5) We go live! It takes approximately 2-3 weeks.",
+        "features": "Includes: 24/7 AI Chatbot, WhatsApp automation, smart web responses, automatic email classification, CRM integration, analytics dashboard, and ongoing technical support.",
+        "thanks": "You're welcome! If you have more questions, I'm here. You can also schedule a call with our team for a personalized demo.",
+        "default": "Great question! To give you the best answer, are you interested in pricing, the implementation process, or the features included?"
+      }
+    },
+
+    "maintenanceBanner": { "title": "Monthly maintenance", "desc": "Hosting, SEO, bug fixes and content updates every month.", "cta": "Add maintenance" },
+    "price": {
+      "title": "Automation and AI",
+      "points": ["Run your business 24/7", "Reduce manual workload", "Scale without increasing costs"],
+      "from": "From", "value": "1299€", "type": "one-time payment", "cta": "Get this package", "note": "No monthly fees · No commitment"
+    },
+    "bottom": { "title": "Want your business to run on its own?", "desc": "We design automated systems that work for you.", "cta": "Book a meeting" }
+  },
+  "Pack4": {
+    "title": "Complete",
+    "highlight": "VM System",
+    "description": "Your entire business in one digital system: website, lead capture, automation, AI, app and support. All in one.",
+    "imageAlt": "Complete VM System - all-in-one digital solution",
+    "includes": "What",
+    "includesHighlight": "is included",
+    "maintenanceBanner": { "title": "Monthly maintenance", "desc": "Hosting, SEO, bug fixes and content updates every month.", "cta": "Add maintenance" },
+
+    "composition": {
+      "packs": [
+        "Pack 1 — Professional website + SEO",
+        "Pack 2 — Customer acquisition",
+        "Pack 3 — Automation and AI"
+      ],
+      "extra": "Custom App + Dashboard + Metrics + Priority support",
+      "extraVisual": [
+        "Custom App",
+        "Dashboard",
+        "Metrics Panel",
+        "Priority Support"
+      ],
+      "result": "COMPLETE VM SYSTEM"
+    },
+
+    "features": [
+      { "title": "Professional website + SEO", "text": "Unique website, optimized and ready to sell." },
+      { "title": "Lead capture and funnels", "text": "Attract clients all year with zero effort." },
+      { "title": "Automation + AI", "text": "Chatbots and 24/7 responses that work for you." },
+      { "title": "Custom app / Dashboard", "text": "App or dashboard built just for you." },
+      { "title": "Metrics dashboard", "text": "See in real time what's working." },
+      { "title": "Priority support", "text": "Dedicated support and continuous improvement." }
+    ],
+    "price": {
+      "title": "Complete VM System",
+      "points": ["All-in-one solution for your business", "Everything integrated in one system", "Scale with full control"],
+      "from": "From", "value": "1999€", "type": "one-time payment", "cta": "Get this package", "note": "No monthly fees · No commitment"
+    },
+    "bottom": { "title": "Ready to fully transform your business?", "desc": "We help you implement the complete system for your business.", "cta": "Book a meeting" }
+  },
+  "FAQ": {
+    "title1": "Frequently",
+    "title2": "Asked Questions",
+    "subtitle": "We answer your questions so you can make decisions with confidence.",
+    "items": [
+      { "question": "People already know me through word of mouth, why do I need this?", "answer": "Word of mouth is great, but it's unstable. If you only rely on that, you have no control over how many new clients come in each week. We create a lead capture system that works in parallel so you have a more constant flow and a professional online image." },
+      { "question": "I don't have time to learn new technologies or AI.", "answer": "That's exactly why we don't sell you technology, but time and control. We handle the technical part: website, automations and digital systems, so you only see the results without having to learn new tools." },
+      { "question": "My business is small, isn't this for larger companies?", "answer": "Quite the opposite. Small businesses benefit the most from automation. Every hour you save on responses, follow-up or repetitive tasks is an hour you can dedicate to better managing your business or reclaiming free time." },
+      { "question": "I already have a website or social media and they don't bring me clients.", "answer": "Having an online presence doesn't mean having a system that converts. We don't just design a pretty website: we create a basic lead capture strategy so the client goes from seeing you online to trusting you and hiring your service." },
+      { "question": "I've had bad experiences with marketing agencies before.", "answer": "We understand. Many agencies sell hype, technical jargon or metrics that don't translate into real results. At VM Agency we focus on a clear transformation: more professionalism, more trust and more real opportunities for your business." },
+      { "question": "Isn't it expensive to implement these systems?", "answer": "What's expensive is losing clients because you don't convey trust, don't respond on time or rely only on word of mouth. We don't frame it as a technology expense, but as an investment to professionalize your business, save time and stabilize your income." }
+    ]
+  },
+  "ConsultoriaVM": {
+    "welcome": { "title": "Exclusive Access: VM Strategic Session", "subtitle": "Reserved space for business owners looking for real results with web, AI and automation.", "button": "Start Evaluation" },
+    "buttons": { "next": "Next", "submit": "Submit and Access Agenda", "calendly": "Book on Calendly" },
+    "questions": {
+      "q1": { "title": "1. What is your business profile?", "options": { "local": "0-10 employees (local business)", "big": "More than 10 employees", "noBusiness": "I don't have a business yet (idea phase)", "personal": "Personal project" } },
+      "q2": { "title": "2. Budget for digital setup?", "options": { "low": "Less than 499€", "mid": "Between 499€ and 999€", "high": "More than 999€", "none": "I have an open budget" } },
+      "q3": { "title": "3. When do you need your digital presence operational?", "options": { "immediate": "Immediate (1-2 weeks)", "soon": "In 1-3 months", "curious": "Just browsing", "late": "In more than 3 months" } },
+      "q4": { "title": "4. Do you have a Website and Google Business?", "options": { "none": "I don't have anything", "basic": "Basic website without Google Business", "partial": "Google Business but no website", "complete": "I already have Website + Automation" } },
+      "q5": { "title": "5. Do you want to automate tasks with AI?", "options": { "yes": "Yes, 100% committed", "maybe": "Yes, but I need to see how it works", "manual": "I prefer to stay manual", "no": "I'm not interested in automation" } }
+    },
+    "exit": { "title": "Your profile does not currently qualify", "subtitle": "We are looking for businesses ready to invest in digitalization with AI and automation." },
+    "success": { "title": "You have been qualified!", "subtitle": "Your profile matches our ideal client.", "redirect": "Automatic redirect in {countdown} seconds." }
+  }
+}

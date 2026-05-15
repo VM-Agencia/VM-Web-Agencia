@@ -1,0 +1,222 @@
+.services-ladder {
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.05);
+    color: black;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.services-title {
+
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+
+.services-title span {
+    background: linear-gradient(90deg, #6c2cff, #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* WRAPPER */
+.ladder-wrapper {
+    position: relative;
+}
+
+
+/* LADDER */
+.ladder {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+/* CARDS */
+.ladder-card {
+    background: linear-gradient(
+            180deg,
+            rgba(255,255,255,0.9),
+            rgba(255,255,255,0.75)
+    );
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+    color: #0b0f1a;
+    border-radius: 20px;
+    padding: 30px;
+    width: 260px;
+    text-align: left;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.ladder-card {
+    transition: all 0.3s ease;
+}
+
+/* HOVER */
+
+
+/* ACTIVA */
+.ladder-card.active {
+    transform: translateY(-20px) scale(1.05);
+    border-color: rgba(108, 44, 255, 0.8);
+    box-shadow: 0 0 40px rgba(108, 44, 255, 0.4);
+}
+
+/* BADGE */
+.card-badge {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+
+    background: linear-gradient(135deg, #ffb347, #ff7e5f);
+    color: white;
+
+    padding: 6px 14px;
+    border-radius: 999px;
+
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    box-shadow: 0 5px 15px rgba(255, 126, 95, 0.4);
+}
+
+/* TEXT */
+.ladder-card h3 {
+
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.ladder-card p {
+
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+
+.ladder-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ladder-card li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 18px;
+}
+
+.ladder-card li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #00c6ff;
+}
+
+/* CURSOR */
+.cursor {
+    position: absolute;
+    top: 20px;
+    transition: all 0.6s ease;
+    z-index: 20;
+    animation: float 1s ease-in-out infinite alternate;
+}
+
+.cursor-icon {
+    font-size: 22px;
+}
+
+/* CLICK EFECTO */
+.click-ring {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(108, 44, 255, 0.3);
+    animation: clickAnim 1.5s infinite;
+}
+
+
+@keyframes clickAnim {
+    0% {
+        transform: scale(0.5);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* FLOAT */
+@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-5px); }
+}
+/* 📱 MOBILE FIX (NO rompe diseño desktop) */
+@media (max-width: 768px) {
+
+    /* ❌ quitar cursor */
+    .cursor {
+        display: none;
+    }
+
+    /* stack vertical limpio */
+    .ladder {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ladder-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .ladder {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ladder-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .cursor {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-ladder {
+        padding: 40px 16px;
+    }
+    .services-title {
+        margin-bottom: 50px;
+    }
+    .ladder-card {
+        width: 100%;
+        max-width: 100%;
+        padding: 24px;
+    }
+    .ladder-card h3 {
+        font-size: 1.1rem;
+    }
+    .ladder-card p {
+        font-size: 0.85rem;
+    }
+    .ladder-card li {
+        font-size: 0.82rem;
+    }
+}

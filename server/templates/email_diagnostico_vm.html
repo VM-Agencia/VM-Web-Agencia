@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Tu diagnóstico gratuito está listo</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+      background: white;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #0b0f19;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+    table { border-collapse: collapse; }
+    img { border: 0; outline: none; text-decoration: none; display: block; }
+    a { text-decoration: none; }
+
+    .email-shell {
+      width: 100%;
+      padding: 34px 14px;
+
+    }
+
+    .email-card {
+      width: 100%;
+      max-width: 680px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 30px 80px rgba(8, 18, 32, 0.18);
+    }
+    .hero {
+      background-color: #ffffff;
+      background-image:
+              linear-gradient(
+                      180deg,
+                      rgba(81, 207, 208, 1) 7%,
+                      rgba(81, 207, 208, 0.55) 18%,
+              rgba(255, 255, 255, 0.24) 58%,
+              rgba(255, 255, 255, 0.88) 100%
+              );
+      background-size: cover;
+      background-position: left top;
+      padding: 46px 42px 38px;
+      text-align: center;
+      border-bottom: 1px solid rgba(81, 207, 208, 0.22);
+    }
+
+    .logo {
+      width: 90px;
+      max-width: 90px;
+      margin: 0 auto 20px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin: 0 0 14px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: rgba(81, 207, 208, 0.12);
+      color: #089da1;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 38px;
+      line-height: 1.04;
+      font-weight: 900;
+      color: #06080d;
+      letter-spacing: -1px;
+    }
+
+    .accent {
+      display: block;
+      color: #08bacc;
+    }
+
+    .hero-text {
+      max-width: 460px;
+      margin: 16px auto 0;
+      color: #3f4755;
+      font-size: 15px;
+      line-height: 1.55;
+    }
+
+    .content {
+      padding: 34px 42px 26px;
+      background: linear-gradient(180deg, #ffffff 0%, #f7feff 100%);
+    }
+
+    .greeting {
+      margin: 0 0 14px;
+      font-size: 20px;
+      line-height: 1.3;
+      font-weight: 800;
+      color: #101522;
+    }
+
+    .greeting span { color: #6952ff; }
+
+    .copy {
+      margin: 0 0 24px;
+      color: #4c5565;
+      font-size: 15px;
+      line-height: 1.65;
+    }
+    .attachment-box {
+      width: 100%;
+      margin: 0 0 24px;
+      border-collapse: separate;
+      border-radius: 28px;
+      overflow: hidden;
+      background: #e6fbff;
+      border: 1px solid rgba(81, 207, 208, 0.85);
+      box-shadow:
+              0 18px 38px rgba(81, 207, 208, 0.28),
+              inset 0 0 0 1px rgba(255, 255, 255, 0.85);
+    }
+
+    .attachment-inner {
+      padding: 22px 24px;
+      border-radius: 28px;
+      background: linear-gradient(
+              135deg,
+              #e3fbff 0%,
+              #f5feff 48%,
+              #e8fbff 100%
+      );
+    }
+
+    .callout {
+      width: 100%;
+      margin: 10px 0 0;
+      border-collapse: separate;
+      border-radius: 30px;
+      overflow: hidden;
+      background: linear-gradient(135deg, #e2fbff 0%, #ffffff 48%, #fff0bf 100%);
+      border: 1px solid rgba(255, 179, 45, 0.78);
+      box-shadow:
+              0 20px 42px rgba(255, 171, 45, 0.24),
+              0 14px 34px rgba(81, 207, 208, 0.18),
+              inset 0 0 0 1px rgba(255, 255, 255, 0.9);
+    }
+
+    .callout-inner {
+      padding: 24px 24px;
+      border-radius: 30px;
+      background: linear-gradient(
+              135deg,
+              #e5fbff 0%,
+              #ffffff 48%,
+              #fff1c2 100%
+      );
+    }
+
+
+
+    .file-icon {
+      width: 42px;
+      height: 42px;
+
+      background: transparent;
+      text-align: center;
+
+      position: relative;
+    }
+
+    .pdf-icon {
+      display: inline-block;
+      width: 22px;
+      height: 28px;
+      margin-top: 7px;
+      border: 2px solid #08bacc;
+      border-radius: 3px;
+      position: relative;
+    }
+
+    .pdf-corner {
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      width: 9px;
+      height: 9px;
+      background: transparent;
+      border-left: 2px solid #08bacc;
+      border-bottom: 2px solid #08bacc;
+    }
+
+    .pdf-line {
+      position: absolute;
+      left: 5px;
+      height: 2px;
+      border-radius: 999px;
+      background: #08bacc;
+    }
+
+    .pdf-line-1 {
+      top: 10px;
+      width: 9px;
+    }
+
+    .pdf-line-2 {
+      top: 15px;
+      width: 12px;
+    }
+
+    .pdf-line-3 {
+      top: 20px;
+      width: 8px;
+    }
+    .file-label {
+      margin: 0;
+      color: #6a7280;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .file-name {
+      margin: 2px 0 0;
+      color: #111827;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 18px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #50d5d6 0%, #31c3c5 100%);
+      color: #ffffff !important;
+      font-size: 13px;
+      font-weight: 800;
+      white-space: nowrap;
+      box-shadow: 0 10px 22px rgba(49, 195, 197, 0.32);
+    }
+
+
+    .callout-inner { padding: 20px; }
+
+    .phone-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      background: #51cfd0;
+      color: #ffffff;
+      text-align: center;
+      line-height: 48px;
+      font-size: 23px;
+      box-shadow: 0 12px 24px rgba(81, 207, 208, 0.34);
+    }
+
+    .callout-title {
+      margin: 0;
+      color: #101522;
+      font-size: 16px;
+      line-height: 1.35;
+      font-weight: 900;
+    }
+
+    .callout-text {
+      margin: 5px 0 0;
+      color: #566071;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .button-yellow {
+      display: inline-block;
+      padding: 14px 20px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #ffd84a 0%, #ff9f2e 100%);
+      color: #111827 !important;
+      font-size: 13px;
+      font-weight: 900;
+      white-space: nowrap;
+      box-shadow: 0 10px 24px rgba(255, 171, 45, 0.34);
+    }
+    .brand-footer {
+      width: 100%;
+      padding: 0;
+      text-align: center;
+
+      background-color: #51cfd0;
+      background-image:
+              linear-gradient(
+                      180deg,
+                      rgba(255, 255, 255, 0.18) 0%,
+                      rgba(255, 255, 255, 0.08) 28%,
+                      rgba(81, 207, 208, 0.18) 55%,
+                      rgba(81, 207, 208, 0.42) 100%
+              );
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+    }
+
+    /* LOGO FOOTER */
+    .brand-name {
+      margin: 0 0 16px;
+      padding-top: 28px;
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: -0.4px;
+      color: #0b0f19;
+    }
+
+    .brand-name span {
+      color: #ffad2d;
+    }
+
+    /* CONTACTO SUPERIOR */
+    .contact-table {
+      margin: 0 auto;
+    }
+
+    .contact-item {
+      padding: 0 9px;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+
+    .contact-icon {
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+      margin-right: 10px;
+      border-radius: 50%;
+      background: rgba(81, 207, 208, 0.16);
+      color: #08bacc;
+      text-align: center;
+      line-height: 34px;
+      font-size: 17px;
+      font-weight: 900;
+      vertical-align: middle;
+    }
+
+    .contact-text {
+      display: inline-block;
+      color: #111827;
+      font-size: 13px;
+      font-weight: 800;
+      vertical-align: middle;
+    }
+
+    .contact-separator {
+      width: 1px;
+      height: 26px;
+      background: #08bacc;
+      opacity: 0.85;
+    }
+
+    /* FOOTER LIMPIO */
+    .clean-footer {
+      margin: 26px auto 0;
+      max-width: 590px;
+      padding: 0 26px 32px;
+      text-align: center;
+    }
+
+    /* SEPARADORES FINOS */
+    .footer-divider {
+      width: 100%;
+      margin: 0 auto 18px;
+      border-collapse: collapse;
+    }
+
+    .footer-divider.second {
+      margin-top: 26px;
+      margin-bottom: 18px;
+    }
+
+    .footer-divider.third {
+      margin-top: 28px;
+      margin-bottom: 16px;
+    }
+
+    .line {
+      height: 1px;
+      font-size: 0;
+      line-height: 0;
+      background: transparent;
+      border-top: 1px solid rgba(81, 207, 208, 0.38);
+    }
+    .footer-divider.third .line {
+      border-top: 1px solid rgba(255, 255, 255, 0.75);
+    }
+
+    .footer-divider.third .heart {
+      color: #ffffff;
+    }
+
+    .star,
+    .heart {
+      width: 42px;
+      text-align: center;
+      color: #51cfd0;
+      font-size: 17px;
+      line-height: 1;
+      font-weight: 800;
+      vertical-align: middle;
+    }
+
+    .heart {
+      font-size: 22px;
+    }
+
+    /* EMAIL DESTINATARIO */
+    .small-text {
+      margin: 0;
+      color: #7d8798;
+      font-size: 12px;
+      line-height: 1.8;
+      font-weight: 500;
+    }
+
+    .small-text a {
+      color: #08aeb8;
+      font-weight: 800;
+    }
+
+    .mail-small-icon {
+      display: inline-block;
+      margin-right: 10px;
+      color: #08bacc;
+      font-size: 17px;
+      font-weight: 900;
+      vertical-align: middle;
+    }
+
+    .dot {
+      display: inline-block;
+      margin: 0 18px;
+      color: #0b0f19;
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 0;
+      vertical-align: middle;
+    }
+
+    /* REGALO */
+    .gift-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 18px;
+      border-radius: 50%;
+      background: rgba(81, 207, 208, 0.18);
+      text-align: center;
+      line-height: 64px;
+    }
+
+    .gift-icon img {
+      width: 50px;
+      height: 50px;
+      margin: 5px auto 0;
+      display: block;
+      border: 0;
+      outline: none;
+    }
+
+    /* P.S. */
+    .ps {
+      margin: 0;
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 1.65;
+      font-style: italic;
+      font-weight: 800;
+    }
+
+    /* COPYRIGHT */
+    .copyright {
+      margin: 0;
+      color: #ffffff;
+      font-size: 11px;
+      line-height: 1.5;
+    }
+    @media screen and (max-width: 600px) {
+      .email-shell { padding: 0; }
+      .email-card { max-width: 100%; border-radius: 0; }
+      .hero { padding: 30px 22px 30px; background-position: left top; }
+      .logo { width: 92px; max-width: 92px; margin-bottom: 16px; }
+      h1 { font-size: 30px; }
+      .hero-text { font-size: 14px; }
+      .content { padding: 28px 20px 22px; }
+      .greeting { font-size: 18px; }
+      .copy { font-size: 14px; }
+      .attachment-inner, .callout-inner { padding: 16px; }
+      .stack-mobile,
+      .stack-mobile tbody,
+      .stack-mobile tr,
+      .stack-mobile td {
+        display: block !important;
+        width: 100% !important;
+        text-align: left !important;
+      }
+      .mobile-space { height: 14px !important; }
+      .button, .button-yellow { width: 100%; text-align: center; }
+      .brand-footer { padding: 28px 20px 20px; }
+      .dark-footer { border-radius: 20px 20px 0 0; padding: 22px 18px 26px; }
+    }
+  </style>
+</head>
+<body>
+  <center class="email-shell">
+    <table role="presentation" class="email-card" width="680" cellpadding="0" cellspacing="0">
+      <tr>
+        <td class="hero">
+          <img src="VMlogo.png" width="118" alt="VM Agencia" class="logo" />
+          <div class="eyebrow">Diagnóstico gratuito preparado</div>
+          <h1>Tu diagnóstico <span class="accent">está listo</span></h1>
+          <p class="hero-text">
+            Valor real: 99€. Para ti: GRATIS. Porque sé lo que es llevar un negocio y no saber si tu presencia digital te está trayendo clientes.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="content">
+          <p class="greeting">Hola <span>{{nombre}}</span>,</p>
+          <p class="copy">
+            Adjuntamos tu diagnóstico en PDF, donde encontrarás un análisis detallado de tu negocio, oportunidades de mejora y un plan de acción personalizado para que puedas atraer más clientes y aumentar tus ventas.
+          </p>
+
+          <table role="presentation" class="attachment-box" width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+              <td class="attachment-inner">
+                <table role="presentation" class="stack-mobile" width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="54" valign="middle">
+                      <div class="file-icon">
+  <span class="pdf-icon">
+    <span class="pdf-corner"></span>
+    <span class="pdf-line pdf-line-1"></span>
+    <span class="pdf-line pdf-line-2"></span>
+    <span class="pdf-line pdf-line-3"></span>
+  </span>
+                      </div>
+                    </td>
+                    <td valign="middle">
+                      <p class="file-label">Adjunto:</p>
+                      <p class="file-name">Diagnóstico_Digital_VM.pdf</p>
+                    </td>
+                    <td class="mobile-space" height="0"></td>
+                    <td align="right" valign="middle" width="175">
+                      <a href="{{pdf_url}}" class="button">Descargar PDF</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+
+          <table role="presentation" class="callout" width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+              <td class="callout-inner">
+                <table role="presentation" class="stack-mobile" width="100%" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="62" valign="middle">
+                      <div class="phone-icon">☎</div>
+                    </td>
+                    <td valign="middle">
+                      <p class="callout-title">¿Tienes dudas? Hablemos 15 minutos</p>
+                      <p class="callout-text">Te explicamos tu diagnóstico sin compromiso y vemos cómo podemos ayudarte a crecer.</p>
+                    </td>
+                    <td class="mobile-space" height="0"></td>
+                    <td align="right" valign="middle" width="165">
+                      <a href="{{calendly_url}}" class="button-yellow">Agendar llamada</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="brand-footer">
+          <p class="brand-name"><span>VM</span> Agency</p>
+          <table role="presentation" class="contact-table" width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+              <td align="center">
+                <table role="presentation" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="contact-item">
+                      <span class="contact-icon">☎</span>
+                      <span class="contact-text">+34 612 597 575</span>
+                    </td>
+
+                    <td class="contact-separator"></td>
+
+                    <td class="contact-item">
+                      <span class="contact-icon">✉</span>
+                      <span class="contact-text">vmmarketing.ia@gmail.com</span>
+                    </td>
+
+                    <td class="contact-separator"></td>
+                    <td class="contact-item">
+                      <span class="contact-icon">🌐</span>
+                      <span class="contact-text">@vm.marketing</span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+
+          <div class="clean-footer">
+
+            <table role="presentation" class="footer-divider" width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="line"></td>
+                <td class="star">✦</td>
+                <td class="line"></td>
+              </tr>
+            </table>
+
+            <p class="small-text">
+              <span class="mail-small-icon">✉</span>
+              Email enviado a {{email_destinatario}}<br />
+              <a href="{{unsubscribe_url}}">Darse de baja</a>
+              <span class="dot">·</span>
+              <a href="{{preferences_url}}">Preferencias</a>
+            </p>
+
+            <table role="presentation" class="footer-divider second" width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="line"></td>
+                <td class="star">✦</td>
+                <td class="line"></td>
+              </tr>
+            </table>
+
+            <div class="gift-icon">
+              <img src="regalo.png" width="54" height="54" alt="Regalo" />
+            </div>
+
+            <p class="ps">
+              P. S. El PDF es totalmente gratuito, no tienes que comprar nada para usarlo.<br />
+              Es mi regalo para ayudarte a empezar.
+            </p>
+
+            <table role="presentation" class="footer-divider third" width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="line"></td>
+                <td class="heart">♡</td>
+                <td class="line"></td>
+              </tr>
+            </table>
+
+            <p class="copyright">© 2026 Agencia VM. Todos los derechos reservados.</p>
+
+          </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+</html>
