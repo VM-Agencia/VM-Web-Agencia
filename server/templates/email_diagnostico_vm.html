@@ -43,9 +43,11 @@
                       180deg,
                       rgba(81, 207, 208, 1) 7%,
                       rgba(81, 207, 208, 0.55) 18%,
-              rgba(255, 255, 255, 0.24) 58%,
-              rgba(255, 255, 255, 0.88) 100%
-              );
+                      rgba(255, 255, 255, 0.24) 58%,
+                      rgba(255, 255, 255, 0.88) 100%
+              ),
+              url('https://vmagencia.es/images/fondo_fibra_laterales.png');
+
       background-size: cover;
       background-position: left top;
       padding: 46px 42px 38px;
@@ -168,11 +170,17 @@
     .file-icon {
       width: 42px;
       height: 42px;
-
       background: transparent;
       text-align: center;
+    }
 
-      position: relative;
+    .file-icon img {
+      display: block;
+      width: 74px;
+      height: 64px;
+      margin: 4px auto 0;
+      border: 0;
+      outline: none;
     }
 
     .pdf-icon {
@@ -247,17 +255,6 @@
 
     .callout-inner { padding: 20px; }
 
-    .phone-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 16px;
-      background: #51cfd0;
-      color: #ffffff;
-      text-align: center;
-      line-height: 48px;
-      font-size: 23px;
-      box-shadow: 0 12px 24px rgba(81, 207, 208, 0.34);
-    }
 
     .callout-title {
       margin: 0;
@@ -298,12 +295,12 @@
                       rgba(255, 255, 255, 0.08) 28%,
                       rgba(81, 207, 208, 0.18) 55%,
                       rgba(81, 207, 208, 0.42) 100%
-              );
+              ),
+              url('https://vmagencia.es/images/footer_fondo.png');
       background-size: cover;
       background-position: center top;
       background-repeat: no-repeat;
     }
-
     /* LOGO FOOTER */
     .brand-name {
       margin: 0 0 16px;
@@ -327,6 +324,7 @@
       padding: 0 9px;
       vertical-align: middle;
       white-space: nowrap;
+
     }
 
     .contact-icon {
@@ -336,12 +334,18 @@
       margin-right: 10px;
       border-radius: 50%;
       background: rgba(81, 207, 208, 0.16);
-      color: #08bacc;
       text-align: center;
-      line-height: 34px;
-      font-size: 17px;
-      font-weight: 900;
       vertical-align: middle;
+      color: #08aeb8;
+    }
+
+    .contact-icon img {
+      display: block;
+      width: 18px;
+      height: 18px;
+      margin: 8px auto 0;
+      border: 0;
+      outline: none;
     }
 
     .contact-text {
@@ -515,7 +519,7 @@
     <table role="presentation" class="email-card" width="680" cellpadding="0" cellspacing="0">
       <tr>
         <td class="hero">
-          <img src="VMlogo.png" width="118" alt="VM Agencia" class="logo" />
+          <img src="https://vmagencia.es/images/VMlogo.png" width="118" alt="VM Agencia" class="logo" />
           <div class="eyebrow">Diagnóstico gratuito preparado</div>
           <h1>Tu diagnóstico <span class="accent">está listo</span></h1>
           <p class="hero-text">
@@ -536,15 +540,20 @@
               <td class="attachment-inner">
                 <table role="presentation" class="stack-mobile" width="100%" cellpadding="0" cellspacing="0">
                   <tr>
-                    <td width="54" valign="middle">
-                      <div class="file-icon">
-  <span class="pdf-icon">
-    <span class="pdf-corner"></span>
-    <span class="pdf-line pdf-line-1"></span>
-    <span class="pdf-line pdf-line-2"></span>
-    <span class="pdf-line pdf-line-3"></span>
-  </span>
-                      </div>
+                    <td width="54" align="center" valign="middle">
+                      <table role="presentation" width="42" height="42" cellpadding="0" cellspacing="0" style="width:42px;height:42px;">
+                        <tr>
+                          <td align="center" valign="middle" style="width:42px;height:42px;text-align:center;vertical-align:middle;">
+                            <img
+                                    src="https://vmagencia.es/images/png_icono.png"
+                                    width="34"
+                                    height="34"
+                                    alt="PDF"
+                                    style="display:block;width:74px;height:54px;margin-left:-10px;border:0;outline:none;"
+                            />
+                          </td>
+                        </tr>
+                      </table>
                     </td>
                     <td valign="middle">
                       <p class="file-label">Adjunto:</p>
@@ -565,8 +574,20 @@
               <td class="callout-inner">
                 <table role="presentation" class="stack-mobile" width="100%" cellpadding="0" cellspacing="0">
                   <tr>
-                    <td width="62" valign="middle">
-                      <div class="phone-icon">☎</div>
+                    <td width="62" align="center" valign="middle"  style="padding-right:10px;">
+                      <table role="presentation" width="48" height="48" cellpadding="0" cellspacing="0" style="width:48px;height:48px;border-radius:16px;background:#51cfd0;">
+                        <tr>
+                          <td align="center" valign="middle" style="width:48px;height:48px;text-align:center;vertical-align:middle;">
+                            <img
+                                    src="https://vmagencia.es/images/phone_icon.png"
+                                    width="18"
+                                    height="17"
+                                    alt="Teléfono"
+                                    style="display:block;width:20px;height:18px;margin:0 auto;border:0;outline:none;"
+                            />
+                          </td>
+                        </tr>
+                      </table>
                     </td>
                     <td valign="middle">
                       <p class="callout-title">¿Tienes dudas? Hablemos 15 minutos</p>
@@ -592,22 +613,56 @@
               <td align="center">
                 <table role="presentation" cellpadding="0" cellspacing="0">
                   <tr>
-                    <td class="contact-item">
-                      <span class="contact-icon">☎</span>
-                      <span class="contact-text">+34 612 597 575</span>
+                    <td class="contact-item" valign="middle" style="padding:0 9px; white-space:nowrap;">
+                      <table role="presentation" cellpadding="0" cellspacing="0" style="display:inline-table; vertical-align:middle;">
+                        <tr>
+                          <td align="center" valign="middle" style="width:34px;height:34px;border-radius:50%;background:rgba(81,207,208,0.16);">
+                            <img
+                                    src="https://vmagencia.es/images/phone_icon_footer.png"
+                                    width="18"
+                                    height="18"
+                                    alt="Teléfono"
+                                    style="display:block;width:18px;height:16px;margin:0 auto;border:0;outline:none;"
+                            />
+                          </td>
+                          <td width="10" style="width:10px;font-size:0;line-height:0;">&nbsp;</td>
+                          <td valign="middle">
+                            <span class="contact-text">+34 612 597 575</span>
+                          </td>
+                        </tr>
+                      </table>
                     </td>
-
                     <td class="contact-separator"></td>
 
-                    <td class="contact-item">
-                      <span class="contact-icon">✉</span>
-                      <span class="contact-text">vmmarketing.ia@gmail.com</span>
+                    <td class="contact-item" valign="middle" style="padding:0 9px; white-space:nowrap;">
+                      <table role="presentation" cellpadding="0" cellspacing="0" style="display:inline-table; vertical-align:middle;">
+                        <tr>
+                          <td align="center" valign="middle" style="width:34px;height:34px;border-radius:50%;background:rgba(81,207,208,0.16);text-align:center;vertical-align:middle;">
+                            <span style="display:block;color:#08aeb8;font-size:17px;font-weight:900;line-height:34px;text-align:center;">✉</span>
+                          </td>
+                          <td width="10" style="width:10px;font-size:0;line-height:0;">&nbsp;</td>
+                          <td valign="middle">
+                            <span class="contact-text">vmmarketing.ia@gmail.com</span>
+                          </td>
+                        </tr>
+                      </table>
                     </td>
-
                     <td class="contact-separator"></td>
-                    <td class="contact-item">
-                      <span class="contact-icon">🌐</span>
-                      <span class="contact-text">@vm.marketing</span>
+
+                    <td class="contact-item" valign="middle" style="padding:0 9px; white-space:nowrap;">
+                      <table role="presentation" cellpadding="0" cellspacing="0" style="display:inline-table; vertical-align:middle;">
+                        <tr>
+                          <td align="center" valign="middle" style="width:34px;height:34px;border-radius:50%;background:rgba(81,207,208,0.16);text-align:center;vertical-align:middle;">
+                            <span style="display:block;color:#08aeb8;font-size:16px;font-weight:900;line-height:34px;text-align:center;">🌐</span>
+                          </td>
+
+                          <td width="10" style="width:10px;font-size:0;line-height:0;">&nbsp;</td>
+
+                          <td valign="middle">
+                            <span class="contact-text">@vm.marketing</span>
+                          </td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
                 </table>
@@ -642,7 +697,7 @@
             </table>
 
             <div class="gift-icon">
-              <img src="regalo.png" width="54" height="54" alt="Regalo" />
+              <img src="https://vmagencia.es/images/regalo.png" width="54" height="54" alt="Regalo" />
             </div>
 
             <p class="ps">
