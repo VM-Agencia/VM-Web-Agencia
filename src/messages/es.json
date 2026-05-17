@@ -1,0 +1,678 @@
+{
+  "Navbar": {
+    "home": "Inicio",
+    "servicios": "Servicios",
+    "proyectos": "Proyectos",
+    "contactar": "Contactar",
+    "faq": "FAQ"
+  },
+
+  "Hero": {
+    "line1": "Transformamos tu negocio",
+    "highlight1": "invisible",
+    "line2": "en",
+    "highlight2": "digital",
+    "line3": "que genera clientes",
+    "subtitle": "Diseñamos Páginas Web | Apps | IA y Automatizaciones | ahorramos tiempo y generamos clientes",
+    "cta": "Agenda tu llamada"
+  },
+  "Services": {
+    "title": "Servicios",
+    "pack": "Pack",
+    "pack1": {
+      "title": "Presencia digital",
+      "desc": "Entrada básica para que tu negocio exista y se entienda online.",
+      "items": ["Página web", "Copywriting con sentido", "SEO básico"]
+    },
+    "pack2": {
+      "title": "Captación de clientes",
+      "desc": "Atrae clientes de forma constante con estrategia y captación activa.",
+      "items": [
+        "Estrategia de marketing",
+        "Embudos de venta",
+        "Publicidad online y email",
+        "Formularios de captación"
+      ]
+    },
+    "pack3": {
+      "title": "Automatización e IA",
+      "desc": "El sistema trabaja por ti mientras tú escalas.",
+      "items": [
+        "Automatización de procesos repetitivos",
+        "Respuestas automáticas (web, WhatsApp, email)",
+        "Chatbots inteligentes",
+        "Seguimiento automático de clientes",
+        "IA para clasificar y ayudar al negocio"
+      ]
+    },
+    "pack4": {
+      "title": "Sistema VM Completo",
+      "desc": "Tu negocio entero convertido en un sistema digital. Todo incluido: web, captación, automatización, IA y más.",
+      "items": [
+        "Web + SEO + Copywriting",
+        "Captación + Embudos + Email",
+        "Automatización + IA + Chatbots",
+        "App a medida + Dashboard + Soporte"
+      ]
+    }
+  },
+
+  "Business": {
+    "eyebrow": "Sin presencia digital no existes",
+    "title": "¿Tu negocio es una carga o un sistema?",
+    "subtitle": "Ayudamos a negocios locales sin presencia digital al la transformacion digital. Escalamos tu negocio, damos visibilidad, aumentamos clientes y ahorramos tiempo",
+
+    "chaos": {
+      "badge": "Negocio Tradicional: caos, saturación y fuga de clientes",
+      "title": "Estas ocupado todo el día, pero tu negocio sigue sintiéndose fuera de control.",
+      "description": "Tienes movimiento, mensajes, trabajo... pero también retrasos, desorden y oportunidades que desaparecen sin que te des cuenta.",
+      "items": [
+        {
+          "title": "Los mensajes se acumulan",
+          "text": "Respondes tarde y cada minuto enfría una venta. WhatsApp, Instagram y email por todas partes."
+        },
+        {
+          "title": "El desorden te está costando dinero",
+          "text": "Nada avanza si tú no validas cada pequeño paso y eso genera retrasos no puedes hacer todo."
+        },
+        {
+          "title": "Pérdida de Oportunidades",
+          "text": "Entran contactos, pero no hay filtro, seguimiento ni control real de las oportunidades."
+        },
+        {
+          "title": "Negocio Sin WEB",
+          "text": "Si no estas en internet no existes para el cliente, dependes solo del boca a boca"
+        }
+      ]
+    },
+
+    "solution": {
+      "badge": "Negocio VM Sistema: orden, control y crecimiento real",
+      "title": "Tu negocio ahora tiene un sistema, Consigues mas clientes, orden, confianza y tareas automatizadas",
+      "description": "Menos improvisación, menos tareas repetitivas y más control sobre cada cliente, cada proceso y cada oportunidad de venta.",
+      "items": [
+        {
+          "title": "La IA responde y filtra por ti",
+          "text": "Atención más rápida, clasificación automática y menos fugas de clientes."
+        },
+        {
+          "title": "Tus procesos dejan de ser manuales",
+          "text": "Menos caos operativo y más tiempo para vender, dirigir y crecer."
+        },
+        {
+          "title": "Cada cliente entra en un sistema",
+          "text": "Captación, seguimiento y control en un flujo claro y medible."
+        },
+        {
+          "title": "Tu WEB empieza a convertir",
+          "text": "Una presencia digital genera confianza, estratégica y resultados."
+        }
+      ]
+    }
+  },
+
+  "System": {
+    "title": "Así construimos tu sistema",
+    "highlight": "paso a paso",
+    "subtitle": "No es una web suelta ni automatizaciones sin sentido. Construimos un sistema donde cada parte trabaja para hacer crecer tu negocio.",
+
+    "steps": [
+      {
+        "title": "Diagnósticamos y analizamos tu Negocio",
+        "description": "Antes de tocar diseño o tecnología, analizamos tu negocio y detectamos si podemos trabajar juntos",
+        "bullets": [
+          "¿Cómo estás captando clientes ahora?",
+          "¿Cuánto dinero estas perdiendo por no tener presencia digital?",
+          "¿Dónde abandona tu cliente?",
+          "¿Podemos trabajar contigo?"
+        ]
+      },
+      {
+        "title": "Diseñamos el VM Sistema",
+        "description": "Definimos una estructura clara: embudo, automatizaciones y experiencia para que todo trabaje en conjunto, no por separado.",
+        "bullets": [
+          "Embudo de ventas",
+          "Estrategia de captación",
+          "Automatizaciones clave",
+          "Guiar al cliente"
+        ]
+      },
+      {
+        "title": "Construimos una web que convierte",
+        "description": "Desarrollamos una web pensada para guiar, convencer y convertir, conectada desde el primer momento con todo el sistema.",
+        "bullets": [
+          "Estructura orientada a resultados",
+          "Guia al cliente para tomar decisiones",
+          "Diseño unico y responsive",
+          "Preparada para escalar"
+        ]
+      },
+      {
+        "title": "Automatizamos y Optimizacion",
+        "description": "Integramos IA | Automatizaciones para reducir trabajo manual y mejorar resultados sin depender constantemente de ti.",
+        "bullets": [
+          "Respuestas automáticas",
+          "Seguimiento de leads",
+          "Integración con CRM y herramientas",
+          "Optimización progresiva"
+        ]
+      }
+    ],
+
+    "result": {
+      "title": "¿Qué está frenando tu negocio? ",
+      "highlight": "Descúbrelo con este AutoDiagnóstico.",
+      "description": "Recibe en tu correo una guía en PDF para que puedas analizar tu negocio por tu cuenta, detectar problemas y entender cómo mejorar tus resultados.",
+      "placeholder": "Tu correo electrónico",
+      "cta": "Recibir guía",
+      "features": [
+        "AutoDiagnóstico",
+        "100% Gratis",
+        "Sin compromiso"
+      ]
+    }
+  },
+
+  "Projects": {
+    "title": "Proyectos que",
+    "highlight": "convierten",
+    "subtitle": "Selecciona un proyecto para ver cómo se ve realmente en dispositivos.",
+    "cta": "Ver proyecto",
+    "projects": [
+      {
+        "category": "Web Corporativa",
+        "description": "Sitio web profesional para estudio de detailing con enfoque premium, reserva de citas y presentación clara de servicios."
+      },
+      {
+        "title": "Automatización de Leads",
+        "category": "IA & Automatización",
+        "description": "Sistema de captura y cualificación automática de leads con IA e integración con CRM."
+      },
+      {
+        "title": "Dashboard Interno",
+        "category": "App a Medida",
+        "description": "Dashboard de analítica y control de operaciones en tiempo real para empresa logística."
+      }
+    ]
+  },
+
+  "CTA": {
+    "title": "Si quieres hacer crecer tu negocio local",
+    "highlight": "necesitas VM Agencia",
+    "description": "Te enseñamos que esta fallando en tu negocio y como solucionarlo."
+  },
+
+  "Footer": {
+    "brand": "Transformamos negocios tradicionales con tecnología, diseño y automatización. Creamos sistemas digitales pensados para atraer, convertir y escalar.",
+    "titles": {
+      "links": "Enlaces",
+      "legal": "Legal",
+      "contact": "Contacto"
+    },
+    "links": {
+      "home": "Home",
+      "servicios": "Servicios",
+      "proyectos": "Proyectos",
+      "contactar": "Contactar",
+      "faq": "FAQ"
+    },
+    "location": "Gandia, España",
+    "cta": {
+      "title": "Hablemos de tu proyecto",
+      "subtitle": "Cuéntanos tu idea y te ayudamos a hacerla crecer."
+    },
+    "copy": "Todos los derechos reservados."
+  }
+,
+
+  "Pack1": {
+    "title": "Servicio",
+    "highlight": "Web + SEO Básico",
+    "description": "Tu web profesional optimizada para que te encuentren en Google.",
+
+    "includes": "¿Qué",
+    "includesHighlight": "incluye",
+    "maintenanceBanner": {
+      "title": "Mantenimiento mensual",
+      "desc": "Hosting, SEO, corrección de errores y cambios de contenido cada mes.",
+      "cta": "Añadir mantenimiento"
+    },
+
+    "features": [
+      { "title": "Página web profesional", "text": "Diseño moderno que se adapta a tu negocio." },
+      { "title": "SEO básico", "text": "Tu web optimizada para que Google te encuentre." },
+      { "title": "Carga rápida", "text": "Tu web carga rápido. Nadie espera, nadie se va." },
+      { "title": "100% Responsive", "text": "Se ve bien en móvil, tablet y ordenador." },
+      { "title": "Copywriting con sentido", "text": "Textos claros que explican lo que haces." },
+      { "title": "Segura y confiable", "text": "Tu web segura y con buena imagen profesional." }
+    ],
+
+    "price": {
+      "title": "Web + SEO Básico",
+      "points": [
+        "Ideal para negocios que empiezan",
+        "Mejora tu visibilidad en Google",
+        "Atrae más clientes de forma orgánica"
+      ],
+      "from": "Desde",
+      "value": "499€",
+      "type": "pago único",
+      "cta": "Quiero este pack",
+      "note": "Sin mensualidades · Sin permanencia",
+      "maintenance": "Mantenimiento mensual opcional: hosting, SEO, corrección de errores y cambios de contenido"
+    },
+
+    "bottom": {
+      "title": "¿Tienes dudas o quieres empezar?",
+      "desc": "Hablemos y te ayudamos a elegir la mejor solución para tu negocio.",
+      "cta": "Agendar cita"
+    },
+
+    "mockup": {
+      "business": "Tu Negocio",
+      "nav": {
+        "home": "Inicio",
+        "services": "Servicios",
+        "contact": "Contacto"
+      },
+      "titleHighlight": "Soluciones",
+      "title": "que impulsan tu negocio",
+      "subtitle": "Ayudamos a negocios como el tuyo a crecer con soluciones digitales a medida.",
+      "cta": "Solicitar información",
+      "mobileText": "Tu web lista para convertir visitas en clientes.",
+      "contact": "Contactar"
+    }
+  }
+,
+
+  "Pack2": {
+    "title": "Captación de",
+    "highlight": "clientes",
+    "description": "Atrae clientes con anuncios en Google, embudos automáticos y una estrategia a medida de tu negocio.",
+    "imageAlt": "Sistema de captación de clientes con anuncios",
+
+    "includes": "¿Qué",
+    "includesHighlight": "incluye",
+    "vsGoogleOrMeta": "Elegimos según las",
+    "vsGoogleOrMetaHighlight": "necesidades",
+    "vsGoogleOrMetaEnd": "de tu negocio",
+    "vsGoogle": {
+      "title": "Google Ads",
+      "items": [
+        "Pago por clic: solo pagas cuando hacen clic",
+        "Público con intención de compra",
+        "Resultados más directos y rápidos",
+        "Coste más alto, pero el cliente compra ya"
+      ],
+      "metric": "Coste medio",
+      "value": "0,55€ / clic"
+    },
+    "vsMeta": {
+      "title": "Meta Ads (Facebook / Instagram)",
+      "items": [
+        "Pago por alcance (CPM): pagas por impresiones",
+        "Público en modo entretenimiento",
+        "Despierta la necesidad de comprar",
+        "Coste más bajo, ideal para generar demanda"
+      ],
+      "metric": "Coste medio",
+      "value": "Variable por impresión"
+    },
+    "vsRoi": {
+      "title": "Ejemplo real de rentabilidad",
+      "items": [
+        { "label": "Ticket promedio", "value": "150€" },
+        { "label": "Clics para 1 venta", "value": "95" },
+        { "label": "Coste por clic", "value": "0,55€" }
+      ],
+      "investmentLabel": "Inversión total",
+      "investmentValue": "52,25€",
+      "result": "Por cada 1€ invertido recuperas 2,87€",
+      "badge": "ROI 287%"
+    },
+    "whatsapp": {
+      "title": "WhatsApp Business automático",
+      "desc": "Configuramos tu WhatsApp Business con las opciones automáticas que la app ofrece por defecto. Nada de programación ni integraciones complejas.",
+      "features": [
+        { "title": "Saludo automático", "desc": "Se envía automáticamente cuando alguien te escribe por primera vez, dando la bienvenida y generando confianza." },
+        { "title": "Mensaje de ausencia", "desc": "Se activa fuera de tu horario laboral para que los clientes sepan cuándo vas a responder." },
+        { "title": "Respuestas rápidas", "desc": "Atajos con frases predefinidas para responder preguntas frecuentes con un solo toque." }
+      ]
+    },
+    "gbp": {
+      "title": "Google Business Profile",
+      "desc": "Creamos u optimizamos tu perfil de Google Business para que aparezcas en búsquedas locales y en Google Maps. Tus clientes te encuentran más fácilmente y ven tu horario, reseñas y datos de contacto todo en un mismo sitio.",
+      "preview": {
+        "name": "Tu Negocio",
+        "category": "Servicios profesionales",
+        "address": "Calle Principal, 123",
+        "hours": "Lun-Vie 9:00-18:00",
+        "call": "Llamar",
+        "website": "Web"
+      }
+    },
+    "landing": {
+      "title": "Landing page para campañas",
+      "desc": "Diseñamos una página simple y directa donde llegan los clientes que hacen clic en tus anuncios. Sin menús ni distracciones, solo lo necesario para que entiendan tu oferta y dejen sus datos.",
+      "preview": {
+        "title": "Transforma tu negocio con presencia digital",
+        "subtitle": "Déjanos tus datos y te llamamos sin compromiso para explicarte cómo podemos ayudarte a crecer.",
+        "nameField": "Nombre",
+        "emailField": "Email",
+        "cta": "Solicitar información"
+      }
+    },
+    "maintenanceBanner": {
+      "title": "Mantenimiento mensual",
+      "desc": "Hosting, SEO, corrección de errores y cambios de contenido cada mes.",
+      "cta": "Añadir mantenimiento"
+    },
+
+    "features": [
+      { "title": "Estrategia de marketing", "text": "Analizamos tu negocio y decidimos si anunciarte en Google o en Meta (Facebook/Instagram) según tu tipo de cliente. En Google la gente busca activamente lo que ofreces — pagas por clic (por ejemplo 0,55€ por clic) y solo pagas cuando alguien hace clic. En Meta pagas por alcance (impresiones); la gente está entreteniéndose y tu anuncio puede despertarles la necesidad de comprar. Google es más caro pero el cliente ya viene con intención de compra. Meta es más barato pero el cliente necesita ser convencido.\n\n Ejemplo real: si tu ticket promedio son 150€, necesitamos 95 clics en Google para conseguir 1 venta. Cada clic cuesta 0,55€, inversión total 95 × 0,55€ = 52,25€. La venta fue de 150€. Por cada 1€ invertido recuperas 2,87€. Eso es un ROI del 287%." },
+      { "title": "Segmentación de clientes", "text": "Definimos quién es tu cliente ideal: edad, zona, intereses y comportamiento. Así tus anuncios solo se muestran a quien realmente puede comprarte, sin gastar dinero en personas que nunca te contratarán." },
+      { "title": "Análisis de mercado", "text": "Estudiamos tu zona, tu competencia y cómo se comportan tus clientes actuales. Así sabemos si es mejor anunciarte en Google, en Meta o en ambos, y con qué tipo de campaña." },
+      { "title": "Publicidad online", "text": "Creamos y gestionamos anuncios en Google y redes sociales. Probamos diferentes textos, imágenes y públicos para quedarnos con lo que mejor funciona y no malgastar presupuesto." },
+      { "title": "WhatsApp Business automático", "text": "Configuramos WhatsApp Business con respuestas automáticas: saludos, mensajes de ausencia y respuestas rápidas. Usamos las opciones básicas que la app ofrece por defecto, sin complicaciones." },
+      { "title": "Formularios de captación", "text": "Añadimos formularios en tu web y redes sociales para que los clientes interesados dejen sus datos sin esfuerzo. Tú recibes la información ordenada y lista para usar." }
+    ],
+
+    "price": {
+      "title": "Captación de clientes",
+      "points": [
+        "Convierte visitas en clientes",
+        "Atrae leads de forma constante",
+        "Aumenta tus oportunidades reales"
+      ],
+      "from": "Desde",
+      "value": "899€",
+      "type": "pago único",
+      "cta": "Quiero este pack",
+      "note": "Sin mensualidades · Sin permanencia",
+      "maintenance": "Mantenimiento mensual opcional: hosting, SEO, corrección de errores, cambios y soporte continuo"
+    },
+
+    "bottom": {
+      "title": "¿Quieres más clientes sin complicarte?",
+      "desc": "Te ayudamos a montar un sistema de captación que atraiga leads por ti.",
+      "cta": "Agendar cita"
+    }
+  },
+
+  "Pack3": {
+    "title": "Automatización",
+    "highlight": "e IA",
+    "description": "Automatizamos procesos y aplicamos IA para que tu negocio funcione incluso cuando no estás.",
+    "imageAlt": "Automatización e IA para optimizar tu negocio",
+
+    "chatName": "Asistente Virtual VM",
+    "chatOnline": "En línea",
+    "chatPlaceholder": "Escribe un mensaje...",
+    "chatTitle": "Chatbot con IA",
+    "chatHighlight": "que conversa por ti",
+    "chatDesc": "Atención al cliente 24/7 con respuestas inteligentes y naturales, como si hablaras con una persona real.",
+
+    "chatStats": [
+      "Disponible 24/7",
+      "Respuestas en segundos",
+      "Sin esperas"
+    ],
+
+    "scenarios": [
+      {
+        "label": "Ventas",
+        "messages": [
+          { "client": "Hola, ¿qué servicios ofrecen?", "bot": "Somos VM Agency, especialistas en marketing digital. Ofrecemos diseño web, captación de clientes y automatización con IA. ¿Qué necesitas?" },
+          { "client": "Necesito una web para mi negocio", "bot": "¡Perfecto! Nuestro Pack 1 incluye web profesional desde 799€ con diseño moderno, SEO y formularios. ¿Te gustaría ver un ejemplo?" },
+          { "client": "Sí, me interesa", "bot": "¡Genial! Te he enviado ejemplos por email. ¿Quieres agendar una llamada?" }
+        ]
+      },
+      {
+        "label": "Soporte",
+        "messages": [
+          { "client": "Hola, tengo un problema con mi web", "bot": "Hola! Cuéntame qué está pasando y lo revisamos al instante." },
+          { "client": "No carga la página de contacto", "bot": "Entendido. Ya identificamos el error, en 10 minutos estará solucionado. ¿Necesitas algo más?" },
+          { "client": "No, gracias. Muy rápido!", "bot": "Para eso estamos 😊 Si necesitas ayuda, aquí me tienes 24/7." }
+        ]
+      },
+      {
+        "label": "Reservas",
+        "messages": [
+          { "client": "Hola, quiero agendar una cita", "bot": "¡Claro! Dime qué día y hora te viene mejor y lo agendo automáticamente." },
+          { "client": "El jueves a las 11:00", "bot": "Perfecto! He agendado tu cita para el jueves a las 11:00. Te envié la confirmación por WhatsApp y email." },
+          { "client": "Gracias!", "bot": "¡Gracias a ti! Te esperamos el jueves 😊" }
+        ]
+      }
+    ],
+
+    "process": {
+      "title": "¿Cómo funciona?",
+      "desc": "Cada mensaje o dato sigue su propia ruta de automatización con IA.",
+      "lanes": [
+        { "input": "WhatsApp", "ai": "Bot IA", "output": "Auto-respuesta" },
+        { "input": "Web", "ai": "IA Clasifica", "output": "CRM" },
+        { "input": "Email", "ai": "IA Analiza", "output": "Tareas" }
+      ],
+      "statusRunning": "▶ Automatización activa — flujo de datos en tiempo real",
+      "statusPaused": "⏸ Pausado — pulsa el botón para iniciar el proceso"
+    },
+
+    "demo": {
+      "title": "Pruébalo tú mismo",
+      "desc": "Escribe lo que quieras y descubre cómo responde tu asistente IA en tiempo real.",
+      "greeting": "¡Hola! Soy el asistente virtual de VM Agency. Puedes preguntarme sobre precios, funciones o cómo funciona la automatización.",
+      "inputPlaceholder": "Escribe un mensaje...",
+      "quickReplies": [
+        "¿Cuánto cuesta?",
+        "¿Cómo funciona?",
+        "¿Incluye WhatsApp?",
+        "¿Qué incluye?"
+      ],
+      "responses": {
+        "greeting": "¡Hola! Estoy aquí para resolver tus dudas sobre automatización e IA. ¿Qué quieres saber?",
+        "price": "El Pack 3 - Automatización e IA tiene un precio de 1299€ (pago único, sin mensualidades). Incluye chatbot IA, automatización de WhatsApp Web y Email, integración CRM y panel de control. ¿Te interesa algún canal en concreto?",
+        "whatsapp": "¡Sí! El sistema se integra completamente con WhatsApp Business. Puedes automatizar respuestas, enviar recordatorios, confirmar citas y más, todo desde una plataforma unificada.",
+        "how": "El proceso es sencillo: 1) Analizamos tu negocio, 2) Configuramos los canales (WhatsApp, web, email), 3) Entrenamos la IA con tu información, 4) Probamos y ajustamos, 5) ¡Activamos! Todo toma aproximadamente 2-3 semanas.",
+        "features": "Incluye: Chatbot IA 24/7, automatización de WhatsApp, respuestas inteligentes en web, clasificación automática de emails, integración con CRM, panel de control y estadísticas, y soporte técnico continuo.",
+        "thanks": "¡De nada! Si tienes más preguntas, aquí estoy. También puedes agendar una llamada con nuestro equipo para ver una demo personalizada.",
+        "default": "¡Buena pregunta! Para darte la mejor respuesta, ¿te interesa saber más sobre precios, el proceso de implementación o las funciones que incluye?"
+      }
+    },
+
+    "maintenanceBanner": {
+      "title": "Mantenimiento mensual",
+      "desc": "Hosting, SEO, corrección de errores y cambios de contenido cada mes.",
+      "cta": "Añadir mantenimiento"
+    },
+
+    "price": {
+      "title": "Automatización e IA",
+      "points": [
+        "Automatiza tu negocio 24/7",
+        "Reduce carga de trabajo manual",
+        "Escala sin aumentar costes"
+      ],
+      "from": "Desde",
+      "value": "1299€",
+      "type": "pago único",
+      "cta": "Quiero este pack",
+      "note": "Sin mensualidades · Sin permanencia",
+      "maintenance": "Mantenimiento mensual opcional: hosting, SEO, corrección de errores, cambios y soporte continuo"
+    },
+
+    "bottom": {
+      "title": "¿Quieres que tu negocio funcione solo?",
+      "desc": "Diseñamos sistemas automáticos que trabajan por ti.",
+      "cta": "Agendar cita"
+    }
+  },
+
+  "Pack4": {
+    "title": "Sistema",
+    "highlight": "VM Completo",
+    "description": "Tu negocio entero en un sistema digital: web, captación, automatización, IA, app y soporte. Todo en uno.",
+    "imageAlt": "Sistema VM Completo - solución digital integral",
+
+    "includes": "¿Qué",
+    "includesHighlight": "incluye",
+    "maintenanceBanner": {
+      "title": "Mantenimiento mensual",
+      "desc": "Hosting, SEO, corrección de errores y cambios de contenido cada mes.",
+      "cta": "Añadir mantenimiento"
+    },
+
+    "composition": {
+      "packs": [
+        "Pack 1 — Web profesional + SEO",
+        "Pack 2 — Captación de clientes",
+        "Pack 3 — Automatización e IA"
+      ],
+      "extra": "App a medida + Dashboard + Métricas + Soporte prioritario",
+      "extraVisual": [
+        "App a medida",
+        "Dashboard",
+        "Panel de métricas",
+        "Soporte prioritario"
+      ],
+      "result": "SISTEMA VM COMPLETO"
+    },
+
+    "features": [
+      { "title": "Web profesional + SEO", "text": "Web única, optimizada y lista para vender." },
+      { "title": "Captación y embudos", "text": "Atrae clientes todo el año sin esfuerzo." },
+      { "title": "Automatización + IA", "text": "Chatbots y respuestas 24/7 que trabajan por ti." },
+      { "title": "App a medida / Dashboard", "text": "App o dashboard hecho a tu medida." },
+      { "title": "Panel de métricas", "text": "Ve en tiempo real qué está funcionando." },
+      { "title": "Soporte prioritario", "text": "Atención dedicada y mejora continua." }
+    ],
+
+    "price": {
+      "title": "Sistema VM Completo",
+      "points": [
+        "Solución integral para tu negocio",
+        "Todo integrado en un solo sistema",
+        "Escala con control total"
+      ],
+      "from": "Desde",
+      "value": "1999€",
+      "type": "pago único",
+      "cta": "Quiero este pack",
+      "note": "Sin mensualidades · Sin permanencia",
+      "maintenance": "Mantenimiento mensual opcional: hosting, SEO, corrección de errores, cambios y soporte continuo"
+    },
+
+    "bottom": {
+      "title": "¿Listo para transformar tu negocio por completo?",
+      "desc": "Te ayudamos a implementar el sistema completo para tu negocio.",
+      "cta": "Agendar cita"
+    }
+  },
+
+  "FAQ": {
+    "title1": "Preguntas",
+    "title2": "Frecuentes",
+    "subtitle": "Resolvemos tus dudas para que tomes decisiones con confianza.",
+    "items": [
+      {
+        "question": "Ya me conocen por el boca a boca, ¿para qué necesito esto?",
+        "answer": "El boca a boca es excelente, pero es inestable. Si dependes solo de eso, no tienes control sobre cuántos clientes nuevos entran cada semana. Creamos un sistema de captación que trabaja en paralelo para que tengas un flujo más constante y una imagen online profesional."
+      },
+      {
+        "question": "No tengo tiempo para aprender a usar nuevas tecnologías o IAs.",
+        "answer": "Precisamente por eso no te vendemos tecnología, sino tiempo y control. Nosotros nos encargamos de la parte técnica: web, automatizaciones y sistemas digitales, para que tú solo veas los resultados sin tener que aprender herramientas nuevas."
+      },
+      {
+        "question": "Mi negocio es pequeño, ¿esto no es para empresas más grandes?",
+        "answer": "Al contrario. Los negocios pequeños son los que más se benefician de automatizar. Cada hora que ahorras en respuestas, seguimiento o tareas repetitivas es una hora que puedes dedicar a gestionar mejor tu negocio o recuperar tiempo libre."
+      },
+      {
+        "question": "Ya tengo una página web o redes sociales y no me traen clientes.",
+        "answer": "Tener presencia online no significa tener un sistema que convierte. Nosotros no solo diseñamos una web bonita: creamos una estrategia básica de captación para que el cliente pase de verte online a confiar en ti y contratar tu servicio."
+      },
+      {
+        "question": "He tenido malas experiencias con agencias de marketing antes.",
+        "answer": "Lo entendemos. Muchas agencias venden humo, tecnicismos o métricas que no se traducen en resultados reales. En VM Agencia nos enfocamos en una transformación clara: más profesionalidad, más confianza y más oportunidades reales para tu negocio."
+      },
+      {
+        "question": "¿Es muy caro implementar estos sistemas?",
+        "answer": "Lo caro es perder clientes por no transmitir confianza, no responder a tiempo o depender solo del boca a boca. No lo planteamos como un gasto en tecnología, sino como una inversión para profesionalizar tu negocio, ahorrar tiempo y estabilizar tus ingresos."
+      }
+    ]
+  },
+
+  "ConsultoriaVM": {
+    "welcome": {
+      "title": "Acceso Exclusivo: Sesión Estratégica VM",
+      "subtitle": "Espacio reservado para dueños de negocios que buscan resultados reales con web, IA y automatización.",
+      "button": "Comenzar Evaluación"
+    },
+    "buttons": {
+      "next": "Siguiente",
+      "submit": "Enviar y Acceder a la Agenda",
+      "calendly": "Reservar en Calendly"
+    },
+    "questions": {
+      "q1": {
+        "title": "1. ¿Cuál es el perfil de tu negocio?",
+        "options": {
+          "local": "0-10 empleados (negocio local)",
+          "big": "Más de 10 empleados",
+          "noBusiness": "Aún no tengo negocio (fase idea)",
+          "personal": "Proyecto personal"
+        }
+      },
+      "q2": {
+        "title": "2. ¿Presupuesto para setup digital?",
+        "options": {
+          "low": "Menos de 499€",
+          "mid": "Entre 499€ y 999€",
+          "high": "Más de 999€",
+          "none": "Tengo presupuesto abierto"
+        }
+      },
+      "q3": {
+        "title": "3. ¿Cuándo necesitas tu presencia digital operativa?",
+        "options": {
+          "immediate": "Inmediato (1-2 semanas)",
+          "soon": "En 1-3 meses",
+          "curious": "Solo estoy curioseando",
+          "late": "En más de 3 meses"
+        }
+      },
+      "q4": {
+        "title": "4. ¿Tienes Web y Google Business?",
+        "options": {
+          "none": "No tengo nada",
+          "basic": "Web básica sin Google Business",
+          "partial": "Google Business pero sin web",
+          "complete": "Ya tengo Web + Automatización"
+        }
+      },
+      "q5": {
+        "title": "5. ¿Quieres automatizar tareas con IA?",
+        "options": {
+          "yes": "Sí, 100% comprometido",
+          "maybe": "Sí, pero necesito ver cómo funciona",
+          "manual": "Prefiero seguir manual",
+          "no": "No me interesa la automatización"
+        }
+      }
+    },
+    "exit": {
+      "title": "Tu perfil no califica actualmente",
+      "subtitle": "Buscamos negocios listos para invertir en digitalización con IA y automatización."
+    },
+    "success": {
+      "title": "¡Has sido calificado!",
+      "subtitle": "Tu perfil encaja con nuestro cliente ideal.",
+      "redirect": "Redirección automática en {countdown} segundos."
+    }
+  }
+
+
+
+
+
+
+
+}
