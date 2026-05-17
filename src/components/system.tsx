@@ -34,34 +34,59 @@ export default function RoadmapSection() {
     const [error, setError] = useState("")
 
     async function handleSubmit(e: FormEvent) {
-        e.preventDefault()
-        if (loading) return
-        setLoading(true)
-        setError("")
-        setSuccess(false)
-        try {
-            await emailjs.send(
-                "service_2678kdm",
-                "template_0581m8i",
-                {
-                    nombre: "amigo/a",
-                    email_destinatario: email,
-                    pdf_url: "https://vmagencia.es/guide.pdf",
-                    calendly_url: "https://calendly.com/vmmarketing-ia",
-                    unsubscribe_url: "https://vmagencia.es",
-                    preferences_url: "https://vmagencia.es",
-                },
-                { publicKey: "xq_pjdKNYGTk8OnpR" }
-            )
-            setSuccess(true)
-            setEmail("")
-        } catch (err) {
-            setError(err instanceof Error ? err.message : JSON.stringify(err))
-        } finally {
-            setLoading(false)
-        }
-    }
+    e.preventDefault()
+    if (loading) return
+    setLoading(true)
+    setError("")
+    setSuccess(false)
+    try {
+      await emailjs.send(
+        "service_2678kdm",
+        "template_0581m8i",
+        {
+          nombre: "amigo/a",
+          email_destinatario: email,
+          pdf_url: "https://vmagencia.es/guide.pdf",
+          calendly_url: "https://calendly.com/vmmarketing-ia",
+          unsubscribe_url: "https://vmagencia.es",
+          preferences_url: "https://vmagencia.es",
+        },
+        { publicKey: "xq_pjdKNYGTk8OnpR" } // 👈 Tu clave real exacta de la foto
+      )
+      setSuccess(true)
+      setEmail("")
 
+      // 🚀 PASO A: GOOGLE SHEETS (Se ejecuta justo aquí tras el éxito)
+      try {
+        await fetch('https://script.google.com/macros/s/AKfycbzn_0IegdKLWTZJEYgfH7fmhq5lp4Ee4RHjuKPca3UZ0diTZPKml8FZKTC_zVVuLBtc/exec', {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {
+            'Content-Type': 'text/plain'
+          },
+          body: JSON.stringify({ email: email })
+        });
+        console.log('Guardado en Google Sheets correctamente.');
+      } catch (sheetErr) {
+        console.error('Error al guardar en Sheets:', sheetErr);
+      }
+
+      // 🚀 PASO B: GOOGLE ANALYTICS
+      if (typeof window !== 'undefined') {
+        const w = window as any;
+        if (w.gtag) {
+          w.gtag('event', 'generacion_lead_pdf', { 'document_name': 'AutoDiagnostico_Guia', 'page_location': w.location.href });
+        } else if (w.dataLayer) {
+          w.dataLayer.push({ 'event': 'generacion_lead_pdf', 'document_name': 'AutoDiagnostico_Guia', 'page_location': w.location.href });
+        }
+      }
+
+    } catch (err) {
+      setError(err instanceof Error ? err.message : JSON.stringify(err))
+    } finally {
+      setLoading(false)
+    }
+  }
     const steps = [
         {
             number: "1",
