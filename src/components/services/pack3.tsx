@@ -12,6 +12,9 @@ import {
     Mail,
     Users,
     Send,
+    ShoppingCart,
+    Headphones,
+    Calendar,
 } from "lucide-react";
 
 import "../css/ServicePackOne.css";
@@ -160,9 +163,9 @@ export function ServicePackThree({ onNavigate }: { onNavigate?: (path: string) =
     }), []);
 
     const scenarios = [
-        t("scenarios.0.label"),
-        t("scenarios.1.label"),
-        t("scenarios.2.label"),
+        { label: t("scenarios.0.label"), icon: ShoppingCart },
+        { label: t("scenarios.1.label"), icon: Headphones },
+        { label: t("scenarios.2.label"), icon: Calendar },
     ];
 
     const chatMessages = [
@@ -235,10 +238,10 @@ export function ServicePackThree({ onNavigate }: { onNavigate?: (path: string) =
                     <div className="p3-chat-showcase">
                         <div className="p3-chat-phone">
                             <div className="p3-chat-phone-header">
-                                <div className="p3-chat-avatar"><Bot /></div>
+                                <div className="p3-chat-avatar"><Bot/></div>
                                 <span className="p3-chat-name">{t("chatName")}</span>
                                 <span className="p3-chat-status">
-                                    <span className="p3-status-dot" />
+                                    <span className="p3-status-dot"/>
                                     {t("chatOnline")}
                                 </span>
                             </div>
@@ -253,34 +256,42 @@ export function ServicePackThree({ onNavigate }: { onNavigate?: (path: string) =
 
                             <div className="p3-chat-input">
                                 <div className="p3-chat-input-field">{t("chatPlaceholder")}</div>
-                                <div className="p3-chat-input-btn"><ArrowRight /></div>
+                                <div className="p3-chat-input-btn"><ArrowRight/></div>
                             </div>
                         </div>
 
                         <div className="p3-chat-info">
+                            <span className="p3-chat-kicker">ASISTENTE INTELIGENTE</span>
+
                             <h3 className="p3-chat-info-title">
                                 {t("chatTitle")} <span>{t("chatHighlight")}</span>
                             </h3>
+
                             <p className="p3-chat-info-desc">{t("chatDesc")}</p>
 
                             <div className="p3-scenario-tabs">
-                                {scenarios.map((label, i) => (
-                                    <button
-                                        key={i}
-                                        className={`p3-scenario-tab ${i === activeScenario ? "active" : ""}`}
-                                        onClick={() => setActiveScenario(i)}
-                                    >
-                                        {label}
-                                    </button>
-                                ))}
-                            </div>
+                                {scenarios.map((scenario, i) => {
+                                    const ScenarioIcon = scenario.icon;
 
+                                    return (
+                                        <button
+                                            key={i}
+                                            className={`p3-scenario-tab ${i === activeScenario ? "active" : ""}`}
+                                            onClick={() => setActiveScenario(i)}
+                                        >
+                                            <ScenarioIcon/>
+                                            {scenario.label}
+                                        </button>
+                                    );
+                                })}
+                            </div>
+                            <div className="p3-chat-divider"/>
                             <div className="p3-chat-stats">
                                 {chatStats.map((stat, i) => {
                                     const StatIcon = stat.icon;
                                     return (
                                         <span key={i} className="p3-chat-stat">
-                                            <StatIcon /> {stat.text}
+                                            <StatIcon/> {stat.text}
                                         </span>
                                     );
                                 })}
