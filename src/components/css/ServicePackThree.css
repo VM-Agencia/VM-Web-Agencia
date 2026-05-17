@@ -26,7 +26,7 @@
 
 .p3-chat-phone {
     flex-shrink: 0;
-    width: 300px;
+    width: 360px;
     border-radius: 1.5rem;
     background: #f8fafc;
     border: 1px solid rgba(148, 163, 184, 0.2);
@@ -171,18 +171,36 @@
     width: 0.85rem;
     height: 0.85rem;
 }
-
 .p3-chat-info {
     flex: 1;
     min-width: 0;
+    max-width: 760px;
+}
+
+.p3-chat-kicker {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 0.85rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(8, 186, 204, 0.08);
+    border: 1px solid rgba(8, 186, 204, 0.12);
+    color: #0e7490;
+    font-size: 0.66rem;
+    font-weight: 850;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
 .p3-chat-info-title {
-    font-size: 1.3rem;
-    font-weight: 800;
+    font-size: clamp(1.55rem, 2.4vw, 2.25rem);
+    font-weight: 900;
     color: #111827;
-    margin: 0 0 0.5rem;
-    line-height: 1.25;
+    margin: 0 0 0.85rem;
+    line-height: 1.08;
+    letter-spacing: -0.055em;
+    max-width: 720px;
 }
 
 .p3-chat-info-title span {
@@ -190,67 +208,101 @@
 }
 
 .p3-chat-info-desc {
-    font-size: 0.88rem;
-    line-height: 1.6;
+    width: 100%;
+    max-width: 640px;
+    font-size: clamp(0.88rem, 1.05vw, 1rem);
+    line-height: 1.65;
     color: #64748b;
-    margin: 0 0 1.2rem;
+    margin: 0 0 1.35rem;
 }
-
 .p3-scenario-tabs {
     display: flex;
-    gap: 0.4rem;
-    margin-bottom: 1.2rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.35rem;
 }
 
 .p3-scenario-tab {
-    padding: 0.5rem 1rem;
-    border-radius: 999px;
-    border: 1.5px solid rgba(148, 163, 184, 0.2);
-    background: white;
+    min-height: 3.05rem;
+    padding: 0.75rem 1.4rem;
+    border-radius: 0.8rem;
+    border: 1.5px solid rgba(148, 163, 184, 0.22);
+    background: #ffffff;
     color: #64748b;
-    font-size: 0.78rem;
-    font-weight: 700;
+    font-size: 0.92rem;
+    font-weight: 800;
     cursor: pointer;
     font-family: inherit;
-    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    transition: all 0.22s ease;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.035);
+}
+
+.p3-scenario-tab svg {
+    width: 1.05rem;
+    height: 1.05rem;
+    color: currentColor;
 }
 
 .p3-scenario-tab:hover {
-    border-color: rgba(8, 186, 204, 0.3);
+    border-color: rgba(8, 186, 204, 0.34);
     color: #0e7490;
-    background: rgba(8, 186, 204, 0.04);
+    background: rgba(8, 186, 204, 0.035);
+    transform: translateY(-1px);
 }
 
 .p3-scenario-tab.active {
     border-color: #0891b2;
-    background: rgba(8, 186, 204, 0.1);
+    background: rgba(8, 186, 204, 0.075);
     color: #0e7490;
-    box-shadow: 0 2px 8px rgba(8, 186, 204, 0.12);
+    box-shadow: 0 12px 30px rgba(8, 186, 204, 0.12);
+}
+
+.p3-chat-divider {
+    width: 100%;
+    height: 1px;
+    margin: 0 0 1.35rem;
+    background: linear-gradient(
+            90deg,
+            rgba(8, 186, 204, 0.24),
+            rgba(148, 163, 184, 0.16),
+            transparent
+    );
 }
 
 .p3-chat-stats {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.8rem;
+    max-width: 720px;
 }
 
 .p3-chat-stat {
+    min-height: 3.2rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.85rem;
+    background: #ffffff;
+    border: 1px solid rgba(148, 163, 184, 0.16);
+    font-size: 0.88rem;
+    font-weight: 800;
+    color: #0e7490;
     display: inline-flex;
     align-items: center;
-    gap: 0.35rem;
-    padding: 0.4rem 0.9rem;
-    border-radius: 999px;
-    background: rgba(8, 186, 204, 0.06);
-    border: 1px solid rgba(8, 186, 204, 0.1);
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #0e7490;
+    gap: 0.65rem;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.035);
 }
 
 .p3-chat-stat svg {
-    width: 0.85rem;
-    height: 0.85rem;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.48rem;
+    border-radius: 50%;
+    background: rgba(8, 186, 204, 0.09);
     color: #0891b2;
+    flex-shrink: 0;
 }
 
 /* ===== PROCESS FLOW (SEQUENTIAL LANES) ===== */
@@ -663,140 +715,6 @@
     width: 100%;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 1024px) {
-    .p3-chat-showcase {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .p3-chat-phone {
-        width: 100%;
-        max-width: 320px;
-    }
-
-    .p3-lane {
-        gap: 0.35rem;
-        padding: 0.5rem 0.6rem;
-    }
-
-    .p3-lane-icon {
-        width: 1.7rem;
-        height: 1.7rem;
-    }
-
-    .p3-lane-icon svg {
-        width: 0.95rem;
-        height: 0.95rem;
-    }
-
-    .p3-lane-label {
-        font-size: 0.68rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .p3-chat-showcase {
-        gap: 1.5rem;
-    }
-
-    .p3-chat-phone {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .p3-chat-conversation {
-        min-height: 200px;
-    }
-
-    .p3-scenario-tabs {
-        flex-wrap: wrap;
-    }
-
-    .p3-scenario-tab {
-        font-size: 0.72rem;
-        padding: 0.4rem 0.8rem;
-    }
-
-    .p3-chat-info-title {
-        font-size: 1.1rem;
-    }
-
-    .p3-chat-info-desc {
-        font-size: 0.82rem;
-    }
-
-    .p3-process {
-        padding: 1rem 0.6rem;
-    }
-
-    .p3-lane {
-        gap: 0.25rem;
-        padding: 0.5rem 0.6rem;
-        justify-content: space-between;
-    }
-
-    .p3-lane.lane-active {
-        transform: scale(1.01);
-    }
-
-    .p3-lane-step {
-        gap: 0.25rem;
-        flex-shrink: 1;
-        min-width: 0;
-    }
-
-    .p3-lane-step-ai {
-        padding: 0.2rem 0.5rem 0.2rem 0.3rem;
-    }
-
-    .p3-step-icon {
-        width: 1.6rem;
-        height: 1.6rem;
-    }
-
-    .p3-step-icon svg {
-        width: 0.9rem;
-        height: 0.9rem;
-    }
-
-    .p3-step-ai-icon {
-        width: 1.3rem;
-        height: 1.3rem;
-    }
-
-    .p3-step-ai-icon svg {
-        width: 0.75rem;
-        height: 0.75rem;
-    }
-
-    .p3-step-label {
-        font-size: 0.6rem;
-        max-width: 5rem;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    .p3-lane-conn {
-        min-width: 0.5rem;
-        flex: 0.4 1 auto;
-    }
-
-    .p3-flow-dot {
-        width: 4px;
-        height: 4px;
-    }
-
-    .p3-progress-bar {
-        gap: 0.5rem;
-        flex-wrap: wrap;
-    }
-
-    .p3-demo {
-        max-width: 100%;
-        margin: 0;
-    }
-}
 
 /* ===== INTERACTIVE DEMO ===== */
 .p3-demo-wrap {
@@ -1068,7 +986,435 @@
     height: 0.95rem;
 }
 
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    /* ===== SERVICE HERO 1024: imagen al lado del texto, no debajo ===== */
+    .service-hero,
+    .service-hero-container,
+    .service-hero-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .service-hero-content {
+        flex: 1 1 52%;
+        max-width: 560px;
+        min-width: 0;
+    }
+
+    .service-hero-image,
+    .service-image {
+        flex: 1 1 42%;
+        max-width: 430px;
+        min-width: 280px;
+        width: 100%;
+    }
+
+    /* ===== CHAT SHOWCASE 1024 ===== */
+    .p3-chat-showcase {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 2.4rem;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .p3-chat-phone {
+        order: 1;
+        flex: 0 0 34%;
+        width: 34%;
+        max-width: 330px;
+        min-width: 280px;
+        border-radius: 1.25rem;
+    }
+
+    .p3-chat-info {
+        order: 2;
+        flex: 1 1 0;
+        width: auto;
+        max-width: 560px;
+        min-width: 0;
+    }
+
+    .p3-chat-kicker {
+        margin-bottom: 0.65rem;
+        padding: 0.28rem 0.62rem;
+        font-size: 0.58rem;
+    }
+
+    .p3-chat-info-title {
+        max-width: 540px;
+
+        line-height: 1.08;
+        margin-bottom: 0.65rem;
+    }
+
+    .p3-chat-info-desc {
+        max-width: 540px;
+        line-height: 1.55;
+        margin-bottom: 1rem;
+    }
+
+    .p3-scenario-tabs {
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .p3-scenario-tab {
+        min-height: 2.35rem;
+
+        border-radius: 0.65rem;
+        font-size: 0.74rem;
+        gap: 0.4rem;
+    }
+
+    .p3-scenario-tab svg {
+        width: 0.82rem;
+        height: 0.82rem;
+    }
+
+    .p3-scenario-tab.active {
+        box-shadow: 0 8px 20px rgba(8, 186, 204, 0.1);
+    }
+
+    .p3-chat-divider {
+        margin-bottom: 1rem;
+    }
+
+    .p3-chat-stats {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.55rem;
+        max-width: 100%;
+    }
+
+    .p3-chat-stat {
+        width: fit-content;
+        min-width: 0;
+        min-height: 2.05rem;
+        padding: 0.42rem 0.7rem;
+        border-radius: 0.62rem;
+        font-size: 0.64rem;
+        gap: 0.35rem;
+        white-space: nowrap;
+        flex: 0 0 auto;
+    }
+
+    .p3-chat-stat svg {
+        width: 1.22rem;
+        height: 1.22rem;
+        padding: 0.28rem;
+        flex-shrink: 0;
+    }
+
+    .p3-chat-phone-header {
+        padding: 0.65rem 0.8rem;
+        gap: 0.45rem;
+    }
+
+    .p3-chat-avatar {
+        width: 1.55rem;
+        height: 1.55rem;
+    }
+
+    .p3-chat-avatar svg {
+        width: 0.85rem;
+        height: 0.85rem;
+    }
+
+    .p3-chat-name {
+        font-size: 0.72rem;
+    }
+
+    .p3-chat-status {
+        font-size: 0.5rem;
+    }
+
+    .p3-status-dot {
+        width: 0.32rem;
+        height: 0.32rem;
+    }
+
+    .p3-chat-conversation {
+        min-height: 220px;
+        padding: 0.65rem;
+        gap: 0.42rem;
+    }
+
+    .p3-chat-msg {
+        max-width: 82%;
+        font-size: 0.66rem;
+        padding: 0.48rem 0.68rem;
+        border-radius: 0.68rem;
+    }
+
+    .p3-chat-input {
+        padding: 0.5rem 0.65rem;
+        gap: 0.4rem;
+    }
+
+    .p3-chat-input-field {
+        padding: 0.38rem 0.6rem;
+        font-size: 0.58rem;
+    }
+
+    .p3-chat-input-btn {
+        width: 1.55rem;
+        height: 1.55rem;
+    }
+
+    .p3-chat-input-btn svg {
+        width: 0.75rem;
+        height: 0.75rem;
+    }
+
+    .p3-lane {
+        gap: 0.35rem;
+        padding: 0.5rem 0.6rem;
+    }
+
+    .p3-lane-icon {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    .p3-lane-icon svg {
+        width: 0.95rem;
+        height: 0.95rem;
+    }
+
+    .p3-lane-label {
+        font-size: 0.68rem;
+    }
+}
+
+/*MEDIA DE MOVIL GRANDE O TABLET*/
+
+
+
+/* MEDIA DE MOVIL GRANDE O TABLET */
 @media (max-width: 768px) {
+    .service-pack-section{
+        padding: 2rem 2rem 2rem;
+    }
+    .service-hero,
+    .service-hero-container,
+    .service-hero-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.8rem;
+        width: 100%;
+    }
+
+    .service-hero-content {
+        order: 1;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .service-hero-badges,
+    .service-badges {
+        order: 2;
+        width: 100%;
+    }
+
+    .service-hero-image,
+    .service-image {
+        order: 3;
+        width: 100%;
+        max-width: 520px;
+        min-width: 0;
+        margin: 0 auto;
+    }
+
+    .p3-chat-showcase {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.4rem;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .p3-chat-info {
+        order: 1;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .p3-chat-phone {
+        order: 2;
+        width: 100%;
+        max-width: 55%;
+        min-width: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .p3-chat-kicker {
+        margin-bottom: 0.65rem;
+        padding: 0.3rem 0.65rem;
+        font-size: 0.58rem;
+    }
+
+    .p3-chat-info-title {
+        max-width: 100%;
+        font-size: 1.8rem;
+        line-height: 1.12;
+        margin-bottom: 0.65rem;
+    }
+
+    .p3-chat-info-desc {
+        max-width: 100%;
+        font-size: 0.9rem;
+        line-height: 1.55;
+        margin-bottom: 1rem;
+        padding-right: 80px;
+    }
+
+    .p3-scenario-tabs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.45rem;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .p3-scenario-tab {
+        width: 100%;
+        min-width: 0;
+        min-height: 2.1rem;
+        padding: 0.42rem 0.55rem;
+        border-radius: 0.65rem;
+        font-size: 0.72rem;
+        gap: 0.35rem;
+        white-space: nowrap;
+        flex: none;
+    }
+
+    .p3-scenario-tab svg {
+        width: 0.8rem;
+        height: 0.8rem;
+        flex-shrink: 0;
+    }
+
+    .p3-chat-divider {
+        margin-bottom: 1rem;
+    }
+
+    .p3-chat-stats {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.45rem;
+        max-width: 100%;
+    }
+
+    .p3-chat-stat {
+        width: fit-content;
+        min-width: 0;
+        min-height: 2rem;
+        padding: 0.4rem 0.65rem;
+        border-radius: 0.62rem;
+        font-size: 0.66rem;
+        gap: 0.35rem;
+        white-space: nowrap;
+        flex: 0 0 auto;
+    }
+
+    .p3-chat-stat svg {
+        width: 1.15rem;
+        height: 1.15rem;
+        padding: 0.26rem;
+        flex-shrink: 0;
+    }
+
+    .p3-chat-conversation {
+        min-height: 200px;
+    }
+
+    .p3-process {
+        padding: 1rem 0.6rem;
+    }
+
+    .p3-lane {
+        gap: 0.25rem;
+        padding: 0.5rem 0.6rem;
+        justify-content: space-between;
+    }
+
+    .p3-lane.lane-active {
+        transform: scale(1.01);
+    }
+
+    .p3-lane-step {
+        gap: 0.25rem;
+        flex-shrink: 1;
+        min-width: 0;
+    }
+
+    .p3-lane-step-ai {
+        padding: 0.2rem 0.5rem 0.2rem 0.3rem;
+    }
+
+    .p3-step-icon {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    .p3-step-icon svg {
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+
+    .p3-step-ai-icon {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+    .p3-step-ai-icon svg {
+        width: 0.75rem;
+        height: 0.75rem;
+    }
+
+    .p3-step-label {
+        font-size: 0.6rem;
+        max-width: 5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .p3-lane-conn {
+        min-width: 0.5rem;
+        flex: 0.4 1 auto;
+    }
+
+    .p3-flow-dot {
+        width: 4px;
+        height: 4px;
+    }
+
+    .p3-progress-bar {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .p3-demo {
+        max-width: 100%;
+        margin: 0;
+    }
+
     .p3-demo-msgs {
         min-height: 160px;
         max-height: 240px;
@@ -1089,8 +1435,12 @@
     }
 
     .p3-demo-qchip {
+        width: fit-content;
+        min-width: 0;
         font-size: 0.65rem;
         padding: 0.3rem 0.6rem;
+        white-space: nowrap;
+        flex: 0 0 auto;
     }
 
     .p3-demo-bottom {
@@ -1102,77 +1452,146 @@
     }
 }
 
+/*MEDIA DE MOVIL*/
 @media (max-width: 480px) {
+    .service-pack-section{
+        padding: 2rem 1rem 2rem;
+    }
     .p3-chat-showcase {
-        gap: 1rem;
+        gap: 1.2rem;
+        margin-bottom: 1.8rem;
     }
 
-    .p3-chat-phone {
-        border-radius: 1rem;
+    .p3-chat-info {
+        width: 100%;
+        max-width: 100%;
     }
 
-    .p3-chat-conversation {
-        min-height: 180px;
-        padding: 0.6rem;
-        gap: 0.4rem;
-    }
-
-    .p3-chat-msg {
-        font-size: 0.68rem;
-        padding: 0.45rem 0.65rem;
-        max-width: 90%;
-    }
-
-    .p3-chat-input {
-        padding: 0.5rem 0.6rem;
-    }
-
-    .p3-chat-input-field {
-        font-size: 0.6rem;
-        padding: 0.4rem 0.6rem;
+    .p3-chat-kicker {
+        margin: 0 auto 0.75rem;
+        padding: 0.34rem 0.75rem;
+        font-size: 0.64rem;
+        text-align: center;
     }
 
     .p3-chat-info-title {
-        font-size: 1rem;
+        max-width: 100%;
+        margin: 0 auto 0.75rem;
+        font-size: 1.48rem;
+        line-height: 1.12;
+
     }
 
-    .p3-scenario-tabs {
-        gap: 0.3rem;
+    .p3-chat-info-desc {
+        max-width: 100%;
+        margin: 0 auto 1rem;
+        font-size: 0.9rem;
+        line-height: 1.6;
+
     }
 
-    .p3-scenario-tab {
-        font-size: 0.65rem;
-        padding: 0.35rem 0.65rem;
+    .p3-chat-phone {
+        width: 100%;
+        max-width: 88%;
+        min-width: 0;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 1rem;
     }
+
+    .p3-chat-phone-header {
+        padding: 0.68rem 0.8rem;
+    }
+
+    .p3-chat-name {
+        font-size: 0.76rem;
+    }
+
+    .p3-chat-status {
+        font-size: 0.52rem;
+    }
+
+    .p3-chat-conversation {
+        min-height: 210px;
+        padding: 0.65rem;
+        gap: 0.45rem;
+    }
+
+    .p3-chat-msg {
+        max-width: 90%;
+        font-size: 0.72rem;
+        line-height: 1.45;
+        padding: 0.5rem 0.68rem;
+        border-radius: 0.72rem;
+    }
+
+    .p3-chat-input {
+        padding: 0.55rem 0.65rem;
+    }
+
+    .p3-chat-input-field {
+        font-size: 0.64rem;
+        padding: 0.42rem 0.65rem;
+    }
+
+    .p3-chat-input-btn {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    .p3-chat-input-btn svg {
+        width: 0.78rem;
+        height: 0.78rem;
+    }
+
 
     .p3-chat-stats {
-        gap: 0.4rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.45rem;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 0.4rem;
     }
 
     .p3-chat-stat {
-        font-size: 0.68rem;
-        padding: 0.3rem 0.7rem;
+        width: 100%;
+        min-width: 0;
+        min-height: 2rem;
+        padding: 0.42rem 0.35rem;
+        border-radius: 0.62rem;
+        font-size: 0.64rem;
+        line-height: 1.15;
+        gap: 0.3rem;
+        white-space: normal;
+        text-align: center;
+        justify-content: center;
+        cursor: default;
+        pointer-events: none;
+        box-shadow: none;
     }
 
     .p3-chat-stat svg {
-        width: 0.75rem;
-        height: 0.75rem;
+        width: 1.05rem;
+        height: 1.05rem;
+        padding: 0.22rem;
+        flex-shrink: 0;
     }
-
     .p3-process-header {
         margin-bottom: 1rem;
     }
 
     .p3-process-title {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
     }
 
     .p3-process-desc {
-        font-size: 0.8rem;
+        font-size: 0.86rem;
+        line-height: 1.5;
     }
 
     .p3-process {
-        padding: 0.75rem 0.4rem;
+        padding: 0.85rem 0.5rem;
         border-radius: 1rem;
     }
 
@@ -1219,7 +1638,7 @@
     }
 
     .p3-step-label {
-        font-size: 0.6rem;
+        font-size: 0.62rem;
         max-width: none;
     }
 
@@ -1255,20 +1674,26 @@
     }
 
     .p3-demo-title {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
     }
 
     .p3-demo-desc {
-        font-size: 0.8rem;
+        font-size: 0.86rem;
+        line-height: 1.5;
     }
 
     .p3-demo-msgs {
-        min-height: 140px;
-        max-height: 200px;
+        min-height: 150px;
+        max-height: 220px;
     }
 
     .p3-demo-welcome-text {
-        font-size: 0.75rem;
+        font-size: 0.8rem;
+    }
+
+    .p3-demo-msg {
+        font-size: 0.8rem;
+        padding: 0.52rem 0.75rem;
     }
 
     .p3-demo-qchip {
@@ -1277,8 +1702,8 @@
     }
 
     .p3-demo-field {
-        font-size: 0.72rem;
-        padding: 0.45rem 0.65rem;
+        font-size: 0.76rem;
+        padding: 0.48rem 0.65rem;
     }
 
     .p3-demo-avatar {
